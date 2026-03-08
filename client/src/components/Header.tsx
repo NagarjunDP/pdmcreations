@@ -42,29 +42,27 @@ export default function Header() {
           : 'bg-white/95 backdrop-blur-xl shadow-lg border-b border-pink-100'
           }`}
       >
-        {/* Header Container - Reset to original slim height */}
-        <div className="relative flex items-center justify-between h-20 md:h-24 px-6 lg:px-12">
+        {/* Header Container */}
+        <div className="relative flex items-center h-20 md:h-24 px-6 lg:px-12">
 
-          {/* 1. LEFT: Premium Brand Mark */}
-          <div className="z-10 flex-1 flex justify-start items-center">
+          {/* 1. BRAND: Logo (Left-aligned always) */}
+          <div className="z-20 flex items-center justify-start xl:flex-1">
             <a href="/" className="group flex items-center gap-3">
               <motion.div
                 whileHover={{ scale: 1.1, rotate: 5 }}
                 transition={{ type: 'spring', stiffness: 300 }}
-                className="relative h-14 w-14 md:h-16 md:w-16 flex items-center justify-center"
+                className="relative h-18 w-18 md:h-22 md:w-22 flex items-center justify-center p-0"
               >
-                {/* Glassmorphism Background for Icon */}
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-purple-600/30 rounded-xl backdrop-blur-sm border border-white/20 shadow-lg group-hover:shadow-pink-500/20 transition-all duration-300" />
                 <img
                   src={LOGO_SRC}
                   alt="PDM Logo"
-                  className="relative h-10 w-10 md:h-12 md:w-12 object-contain filter drop-shadow-[0_0_8px_rgba(236,72,153,0.3)]"
+                  className="relative h-full w-full object-contain filter drop-shadow-[0_0_12px_rgba(236,72,153,0.4)]"
                   loading="eager"
                 />
               </motion.div>
 
-              {/* Brand Text */}
-              <div className="flex flex-col">
+              {/* Brand Text - Desktop (beside logo) */}
+              <div className="hidden xl:flex flex-col">
                 <span className={`text-xl md:text-2xl font-black tracking-tighter leading-none transition-colors duration-300 font-serif ${showTransparent ? 'text-white' : 'text-gray-900'
                   }`}>
                   PDM
@@ -78,40 +76,52 @@ export default function Header() {
             </a>
           </div>
 
-          {/* 3. RIGHT: Desktop Nav & Mobile Toggle */}
-          <div className="z-10 flex-1 flex justify-end items-center">
-            {/* Desktop Nav */}
-            <div className="hidden xl:flex items-center gap-6">
-              <nav className="flex items-center gap-6">
-                {navItems.map((item) => (
-                  <a
-                    key={item.href}
-                    href={item.href}
-                    className={`font-bold text-sm tracking-widest uppercase transition-all duration-300 ${showTransparent
-                      ? 'text-white hover:text-pink-200 drop-shadow-lg'
-                      : 'text-gray-900 hover:text-pink-600'
-                      }`}
-                  >
-                    {item.label}
-                  </a>
-                ))}
-              </nav>
+          {/* 2. BRAND TEXT - Mobile (Centered absolutely) */}
+          <div className="xl:hidden absolute left-1/2 -translate-x-1/2 flex flex-col items-center pointer-events-none z-10">
+            <span className={`text-xl font-black tracking-tighter leading-none transition-colors duration-300 font-serif ${showTransparent ? 'text-white' : 'text-gray-900'
+              }`}>
+              PDM
+              <span className="text-pink-600">.</span>
+            </span>
+            <span className={`text-[10px] font-bold tracking-[0.25em] uppercase transition-colors duration-300 ${showTransparent ? 'text-pink-200' : 'text-purple-600'
+              }`}>
+              Creations
+            </span>
+          </div>
 
-              <a
-                href="/contact"
-                className={`px-6 py-2 rounded-full font-bold text-sm transition-all duration-300 shadow-lg hover:scale-105 ${showTransparent
-                  ? 'bg-white text-pink-600 hover:bg-pink-50'
-                  : 'bg-gradient-to-r from-pink-500 to-purple-600 text-white'
-                  }`}
-              >
-                Book Now
-              </a>
-            </div>
+          {/* 3. NAVIGATION: Desktop Only */}
+          <div className="hidden xl:flex flex-1 justify-end items-center gap-6">
+            <nav className="flex items-center gap-6">
+              {navItems.map((item) => (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  className={`font-bold text-sm tracking-widest uppercase transition-all duration-300 ${showTransparent
+                    ? 'text-white hover:text-pink-200 drop-shadow-lg'
+                    : 'text-gray-900 hover:text-pink-600'
+                    }`}
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
 
-            {/* Mobile Toggle Button */}
+            <a
+              href="/contact"
+              className={`px-6 py-2 rounded-full font-bold text-sm transition-all duration-300 shadow-lg hover:scale-105 ${showTransparent
+                ? 'bg-white text-pink-600 hover:bg-pink-50'
+                : 'bg-gradient-to-r from-pink-500 to-purple-600 text-white'
+                }`}
+            >
+              Book Now
+            </a>
+          </div>
+
+          {/* 4. MOBILE TOGGLE: Absolute right on mobile */}
+          <div className="xl:hidden absolute right-6 top-1/2 -translate-y-1/2 flex items-center z-20">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`xl:hidden p-2 rounded-xl transition-all ${showTransparent
+              className={`p-2 rounded-xl transition-all ${showTransparent
                 ? 'bg-white/20 backdrop-blur-md text-white border border-white/40'
                 : 'bg-white shadow-md text-gray-900 border border-pink-100'
                 }`}
@@ -120,39 +130,41 @@ export default function Header() {
             </button>
           </div>
         </div>
-      </header>
+      </header >
 
       {/* Mobile Menu Overlay */}
       <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="fixed inset-x-0 top-20 z-40 bg-white shadow-2xl xl:hidden"
-          >
-            <nav className="flex flex-col items-center gap-6 pt-10 pb-12">
-              {navItems.map((item) => (
+        {
+          isOpen && (
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              className="fixed inset-x-0 top-20 z-40 bg-white shadow-2xl xl:hidden"
+            >
+              <nav className="flex flex-col items-center gap-6 pt-10 pb-12">
+                {navItems.map((item) => (
+                  <a
+                    key={item.href}
+                    href={item.href}
+                    onClick={() => setIsOpen(false)}
+                    className="text-xl font-bold text-gray-900 hover:text-pink-600 uppercase"
+                  >
+                    {item.label}
+                  </a>
+                ))}
                 <a
-                  key={item.href}
-                  href={item.href}
+                  href="/contact"
                   onClick={() => setIsOpen(false)}
-                  className="text-xl font-bold text-gray-900 hover:text-pink-600 uppercase"
+                  className="mt-4 px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg rounded-full shadow-xl"
                 >
-                  {item.label}
+                  Book Now
                 </a>
-              ))}
-              <a
-                href="/contact"
-                onClick={() => setIsOpen(false)}
-                className="mt-4 px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-bold text-lg rounded-full shadow-xl"
-              >
-                Book Now
-              </a>
-            </nav>
-          </motion.div>
-        )}
-      </AnimatePresence>
+              </nav>
+            </motion.div>
+          )
+        }
+      </AnimatePresence >
     </>
   );
 }

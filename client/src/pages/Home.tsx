@@ -22,6 +22,7 @@ import {
   Heart,
   Home as HomeIcon,
   Tent,
+  MessageCircle,
 } from 'lucide-react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -64,7 +65,7 @@ const services = [
     title: 'Plate Decoration',
     icon: 'Sparkles',
     description: 'Creative plate decor for special ceremonies',
-    image: '/plate7.jpeg',
+    image: '/baby6.jpeg',
   },
   {
     id: 'haldi',
@@ -146,7 +147,7 @@ const SERVICES = [
   },
   {
     icon: Gem,
-    img: "/plate7.jpeg", // Needs appropriate image
+    img: "/baby6.jpeg", // Needs appropriate image
     title: "Plate Decoration",
     subtitle: "Creative plate decor for special ceremonies",
     highlights: ["Engagement Plates", "Aarti Thali", "Bridal Trousseau", "Gift Packing"],
@@ -621,52 +622,55 @@ function Hero() {
 
 
 
-        {/* MAIN TITLE */}
-        <div className="relative mb-2 md:mb-6">
-          {/* Performance Friendly Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-purple-600/20 blur-[60px] rounded-full -z-10" />
+        {/* MAIN TITLE - With Subtle "Pulse & Shimmer" Animation */}
+        <div className="relative mb-4 md:mb-8">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] h-[90%] bg-amber-500/5 blur-[100px] rounded-full -z-10" />
 
           <motion.h1
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            // Highly Responsive Text Sizes
-            className="text-6xl xs:text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-serif font-semibold leading-[0.9] tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white via-purple-100 to-fuchsia-400 drop-shadow-xl"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{
+              opacity: [0, 1, 0.9, 1],
+              y: 0,
+              scale: [1, 1.01, 1]
+            }}
+            transition={{
+              duration: 1.5,
+              ease: "easeOut",
+              scale: { duration: 4, repeat: Infinity, ease: "easeInOut" },
+              opacity: { duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1.5 }
+            }}
+            className="text-6xl xs:text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-serif font-bold leading-[0.9] tracking-tight drop-shadow-2xl bg-gradient-to-b from-yellow-100 via-yellow-400 to-amber-600 bg-clip-text text-transparent"
           >
             PDM Creations
           </motion.h1>
         </div>
 
-
-
-        {/* MIDDLE TAGLINE */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+        {/* MIDDLE TAGLINE (Motto) - Enhanced Visibility & Elegant Serif Font */}
+        <motion.p
+          initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 1 }}
-          className="text-xl sm:text-3xl md:text-5xl font-light text-white drop-shadow-lg px-4"
+          transition={{ delay: 1.2, duration: 1.5, ease: "easeOut" }}
+          className="text-xl sm:text-2xl md:text-4xl font-serif italic tracking-wider text-amber-50 drop-shadow-[0_2px_15px_rgba(251,191,36,0.5)]"
         >
           Creating Magic With Minimalist Decor
-        </motion.h2>
-
-
+        </motion.p>
 
         {/* ACTION BUTTONS */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1 }}
-          className="mt-8 md:mt-12 flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto px-8 sm:px-0"
+          transition={{ delay: 1.5 }}
+          className="mt-12 md:mt-16 flex flex-col sm:flex-row gap-4 md:gap-6 w-full sm:w-auto px-8 sm:px-0"
         >
           <a
             href="/services"
-            className="w-full sm:w-auto px-8 py-3 md:py-4 bg-gradient-to-r from-fuchsia-700 to-purple-800 text-white font-semibold text-base md:text-lg rounded-full shadow-lg shadow-purple-900/40 active:scale-95 transition-transform"
+            className="w-full sm:w-auto px-10 py-4 bg-gradient-to-r from-amber-600 to-yellow-500 text-white font-bold text-base md:text-lg rounded-full shadow-xl shadow-amber-900/30 hover:shadow-2xl hover:scale-105 active:scale-95 transition-all"
           >
             Explore Services
           </a>
           <a
             href="tel:+918884076143"
-            className="w-full sm:w-auto px-8 py-3 md:py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-medium text-base md:text-lg rounded-full active:bg-white/20 transition-colors"
+            className="w-full sm:w-auto px-10 py-4 bg-white/5 backdrop-blur-md border border-white/20 text-white font-medium text-base md:text-lg rounded-full hover:bg-white/10 active:scale-95 transition-all"
           >
             Call Now
           </a>
@@ -675,22 +679,20 @@ function Hero() {
 
 
       {/* =========================================
-          3. BOTTOM LEFT ANIMATED LOGO BADGE
+          3. BOTTOM LEFT ANIMATED LOGO BADGE (CLEAN & LARGE)
       ========================================= */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 1.5, duration: 1 }}
-        // Positioning: Bottom Left, responsive margins
-        className="absolute bottom-4 left-4 md:bottom-8 md:left-8 z-30"
+        transition={{ delay: 2.2, duration: 1 }}
+        className="absolute bottom-6 left-6 md:bottom-10 md:left-10 z-30"
       >
-        {/* Container for Video + Text Ring. Responsive sizing. */}
-        <div className="relative w-[70px] h-[70px] md:w-[120px] md:h-[120px] flex items-center justify-center">
+        <div className="relative w-[100px] h-[100px] md:w-[150px] md:h-[150px] flex items-center justify-center group cursor-pointer">
 
           {/* ROTATING CIRCULAR TEXT RING */}
           <motion.div
             animate={{ rotate: 360 }}
-            transition={{ duration: 18, repeat: Infinity, ease: "linear" }}
+            transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
             className="absolute inset-0 w-full h-full flex items-center justify-center pointer-events-none"
           >
             {characters.map((char, i) => (
@@ -703,40 +705,19 @@ function Hero() {
                   transformOrigin: "0 50%",
                   left: '50%',
                 }}
-                className="text-pink-400 font-serif uppercase text-[7px] md:text-[11px] font-bold tracking-[0.3em]"
+                className="text-amber-400 font-serif uppercase text-[8px] md:text-[13px] font-bold tracking-[0.4em]"
               >
-                <span style={{ position: 'absolute', top: -8, left: '-50%' }}>{char}</span>
+                <span style={{ position: 'absolute', top: -10, left: '-50%' }}>{char}</span>
               </span>
             ))}
           </motion.div>
 
-          {/* CENTRAL CIRCULAR LOGO */}
-          <div className="relative w-full h-full rounded-full overflow-hidden border-2 border-pink-400/40 z-10 bg-white/20 backdrop-blur-md p-2 md:p-3 scale-75 shadow-[0_0_30px_rgba(236,72,153,0.4)] flex items-center justify-center group-hover:scale-90 transition-transform duration-500">
-            {/* Shimmering Pulse Background */}
-            <motion.div
-              animate={{
-                scale: [1, 1.15, 1],
-                opacity: [0.3, 0.6, 0.3],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-0 bg-gradient-to-tr from-pink-500/20 via-white/5 to-purple-600/20"
-            />
-
+          {/* CENTRAL LOGO (NO BORDER, NO CONTAINER) */}
+          <div className="relative w-full h-full z-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
             <img
               src="/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.png"
               alt="PDM Logo"
-              className="relative w-[85%] h-[85%] object-contain filter drop-shadow-[0_0_12px_rgba(236,72,153,0.5)] z-20"
-            />
-
-            {/* Subtle Rotating Glow Ring */}
-            <motion.div
-              animate={{ rotate: -360 }}
-              transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-              className="absolute inset-0 border border-white/40 border-dashed rounded-full pointer-events-none"
+              className="w-[75%] h-[75%] object-contain filter drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] z-20"
             />
           </div>
         </div>
@@ -1091,15 +1072,23 @@ function CTA() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href={`tel:${PHONE_NUMBER}`}
-            className="px-10 py-4 bg-white text-purple-700 font-bold rounded-full shadow-xl hover:shadow-2xl transition-all flex items-center justify-center gap-2"
+            className="px-10 py-4 bg-gradient-to-r from-yellow-400 via-yellow-500 to-amber-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-2"
           >
             <Phone className="w-5 h-5" /> Call {PHONE_NUMBER}
           </a>
           <a
             href="#contact"
-            className="px-10 py-4 bg-gradient-to-r from-pink-600 to-purple-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all"
+            className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
             Get Free Quote
+          </a>
+          <a
+            href={`https://wa.me/918884076143`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-10 py-4 bg-gradient-to-r from-emerald-500 to-teal-600 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all flex items-center justify-center gap-2"
+          >
+            <MessageCircle className="w-5 h-5" /> WhatsApp
           </a>
         </div>
       </motion.div>
@@ -1117,36 +1106,93 @@ function FloatingCallButton() {
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-pink-600 to-purple-700 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-pink-500/50 transition-all"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-yellow-500/50 transition-all border-4 border-white"
       >
         <Phone className="w-8 h-8" />
       </motion.a>
 
-      {/* Instagram Button */}
+      {/* WhatsApp Button */}
       <motion.a
-        href="https://www.instagram.com/pdmcreations?igsh=cmo5NHNzdThkdng5"
+        href={`https://wa.me/918884076143`}
         target="_blank"
         rel="noopener noreferrer"
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-24 right-6 z-50 w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-pink-500/50 transition-all"
+        className="fixed bottom-24 right-6 z-50 w-16 h-16 bg-gradient-to-br from-emerald-500 to-teal-600 text-white rounded-full shadow-2xl flex items-center justify-center hover:shadow-emerald-500/50 transition-all border-4 border-white"
       >
-        <Instagram className="w-8 h-8" />
+        <MessageCircle className="w-8 h-8" />
       </motion.a>
     </>
   );
 }
 
+function AutoSlider({ count, setIndex, index }: { count: number, setIndex: (i: number) => void, index: number }) {
+  useEffect(() => {
+    const timer = setInterval(() => {
+      // Increment by 1 (one page at a time)
+      setIndex((index + 1) % count);
+    }, 5000);
+    return () => clearInterval(timer);
+  }, [index, count, setIndex]);
+  return null;
+}
+
+function ScrollingStats() {
+  const stats = [
+    "250+ Completed Events",
+    "3+ Years Experience",
+    "100% Client Satisfaction",
+    "Premium Floral Decor",
+    "Creative Plate Styling",
+    "Bespoke Event Design",
+  ];
+
+  // Double for seamless infinite loop
+  const displayStats = [...stats, ...stats];
+
+  return (
+    <div className="bg-slate-950 border-y border-amber-500/20 py-4 md:py-6 overflow-hidden relative z-20 pointer-events-none">
+      <motion.div
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          x: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 35, // Slower is smoother and more premium
+            ease: "linear",
+          },
+        }}
+        style={{ willChange: "transform" }}
+        className="flex whitespace-nowrap gap-12 md:gap-24 items-center w-max"
+      >
+        {displayStats.map((stat, i) => (
+          <div key={i} className="flex items-center gap-4 md:gap-6 transform-gpu">
+            <Sparkles className="w-4 h-4 md:w-5 md:h-5 text-amber-500" />
+            <span className="text-amber-100/90 font-serif italic font-medium tracking-[0.15em] text-sm md:text-xl uppercase drop-shadow-sm">
+              {stat}
+            </span>
+            <Star className="w-3 h-3 md:w-4 md:h-4 text-amber-600/40" />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}
+
+
 // === MAIN APP ===
 export default function Home() {
+  const [activePackageIndex, setActivePackageIndex] = useState(0);
+
   return (
     <>
       <Hero />
+      <ScrollingStats />
 
       {/* GLOBAL ANIMATIONS – Paste once */}
-      <style jsx global>{`
+      <style>{`
   @keyframes title-glow {
     0%, 100% { 
       text-shadow: 0 0 40px rgba(251, 191, 36, 0.8), 
@@ -1168,106 +1214,121 @@ export default function Home() {
 `}</style>
       {/* ========== PERFECT HORIZONTAL SERVICES CAROUSEL (NO EDGE CUT-OFF) ========== */}
       {/* ========== FINAL: CLEAN, SMALL, PREMIUM SCROLLING SERVICES (USING YOUR REAL DATA) ========== */}
-      <section className="py-20 md:py-28 bg-white">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <section className="py-20 md:py-28 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Heading */}
           <div className="text-center mb-14">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
               className="text-4xl md:text-5xl font-bold text-gray-900"
             >
               Our <span className="bg-gradient-to-r from-pink-600 to-purple-700 bg-clip-text text-transparent">Services</span>
             </motion.h2>
-            <p className="mt-4 text-lg text-gray-600">Tap any card to explore packages</p>
+            <p className="mt-4 text-lg text-gray-600">Discover our expert event solutions</p>
           </div>
 
-          {/* Scrolling Container */}
-          <div className="relative overflow-hidden">
-            {/* Fade edges */}
-            <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-white to-transparent z-10" />
-            <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10" />
+          {/* New Slider Implementation - Grouped by Pages */}
+          <div className="relative group">
+            <div className="overflow-hidden">
+              <motion.div
+                className="flex"
+                animate={{ x: `-${activePackageIndex * 100}%` }}
+                transition={{ type: "spring", stiffness: 200, damping: 25 }}
+              >
+                {/* Group items into pages: 1 on mobile, 3 on desktop */}
+                {(() => {
+                  const itemsPerPage = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
+                  const pages = [];
+                  for (let i = 0; i < services.length; i += itemsPerPage) {
+                    pages.push(services.slice(i, i + itemsPerPage));
+                  }
 
-            <motion.div
-              className="flex gap-6"
-              animate={{ x: [0, -100 + "%"] }}
-              transition={{
-                duration: 40,
-                ease: "linear",
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              style={{ animationPlayState: "running" }}
-              onMouseEnter={(e) => e.currentTarget.style.animationPlayState = "paused"}
-              onMouseLeave={(e) => e.currentTarget.style.animationPlayState = "running"}
-              onTouchStart={(e) => e.currentTarget.style.animationPlayState = "paused"}
-              onTouchEnd={(e) => e.currentTarget.style.animationPlayState = "running"}
-            >
-              {[...services, ...services].map((service, i) => {
-                const Icon = iconMap[service.icon] || Sparkles;
-                return (
-                  <motion.a
-                    key={`${service.id}-${i}`}
-                    href="/services"
-                    className="
-                group flex-shrink-0 
-                w-[78vw] 
-                sm:w-[65vw] 
-                md:w-[40vw] 
-                lg:w-[30vw] 
-                max-w-xs
-              "
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.97 }}
-                  >
-                    <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden">
-                      {/* Image */}
-                      <div className="relative h-48 overflow-hidden">
-                        <img
-                          src={service.image}
-                          alt={service.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  return pages.map((page, pageIndex) => (
+                    <div key={pageIndex} className="flex-shrink-0 w-full flex gap-6 px-4">
+                      {page.map((service) => {
+                        const Icon = iconMap[service.icon] || Sparkles;
+                        return (
+                          <motion.a
+                            key={service.id}
+                            href="/services"
+                            className={`flex-shrink-0 ${itemsPerPage === 1 ? 'w-full' : 'w-[calc(33.333%-16px)]'}`}
+                          >
+                            <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 overflow-hidden h-full group/card">
+                              {/* Image */}
+                              <div className="relative h-56 overflow-hidden">
+                                <img
+                                  src={service.image}
+                                  alt={service.title}
+                                  className="w-full h-full object-cover group-hover/card:scale-110 transition-transform duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
-                        {/* Icon + Title */}
-                        <div className="absolute bottom-4 left-4 text-white">
-                          <Icon className="w-8 h-8 mb-1.5" />
-                          <h3 className="text-lg font-bold drop-shadow-lg leading-tight">
-                            {service.title}
-                          </h3>
-                        </div>
-                      </div>
+                                <div className="absolute bottom-4 left-4 text-white">
+                                  <Icon className="w-8 h-8 mb-2 text-pink-400" />
+                                  <h3 className="text-xl font-bold drop-shadow-md">{service.title}</h3>
+                                </div>
+                              </div>
 
-                      {/* Content */}
-                      <div className="p-5">
-                        <p className="text-gray-700 text-xs leading-relaxed mb-3 line-clamp-2">
-                          {service.description}
-                        </p>
-                        <div className="flex items-center text-pink-600 font-semibold text-sm">
-                          View Packages
-                          <ChevronRight className="w-4.5 h-4.5 ml-1 group-hover:translate-x-1.5 transition-transform duration-300" />
-                        </div>
-                      </div>
+                              {/* Content */}
+                              <div className="p-6">
+                                <p className="text-gray-600 text-sm leading-relaxed mb-4 line-clamp-2">
+                                  {service.description}
+                                </p>
+                                <div className="flex items-center text-pink-600 font-bold text-sm">
+                                  View Details
+                                  <ChevronRight className="w-5 h-5 ml-1 group-hover/card:translate-x-1.5 transition-transform" />
+                                </div>
+                              </div>
+                            </div>
+                          </motion.a>
+                        );
+                      })}
                     </div>
-                  </motion.a>
-                );
-              })}
-            </motion.div>
+                  ));
+                })()}
+              </motion.div>
+            </div>
+
+            {/* Dot Navigation */}
+            <div className="flex justify-center items-center gap-3 mt-12">
+              {(() => {
+                const itemsPerPage = typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3;
+                const pageCount = Math.ceil(services.length / itemsPerPage);
+                return Array.from({ length: pageCount }).map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActivePackageIndex(i)}
+                    className={`h-2.5 rounded-full transition-all duration-300 ${activePackageIndex === i
+                      ? "w-8 bg-pink-600 shadow-[0_0_10px_rgba(219,39,119,0.5)]"
+                      : "w-2.5 bg-gray-300 hover:bg-gray-400"
+                      }`}
+                    aria-label={`Go to page ${i + 1}`}
+                  />
+                ));
+              })()}
+            </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="text-center mt-14">
+          <div className="text-center mt-12">
             <motion.a
               href="/services"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block px-10 py-4 bg-gradient-to-r from-pink-600 to-purple-700 text-white font-bold rounded-full shadow-xl hover:shadow-2xl transition-all"
+              className="inline-block px-10 py-4 bg-gradient-to-r from-pink-600 to-purple-700 text-white font-bold rounded-full shadow-lg hover:shadow-2xl transition-all"
             >
-              Explore All Services
+              See All Services
             </motion.a>
           </div>
         </div>
+
+        {/* Improved Auto-sliding Logic */}
+        <AutoSlider
+          count={Math.ceil(services.length / (typeof window !== 'undefined' && window.innerWidth < 768 ? 1 : 3))}
+          setIndex={setActivePackageIndex}
+          index={activePackageIndex}
+        />
       </section>
       {/* Animate services, normal scroll sections - no container scroll */}
       {SERVICES.map((service) => (

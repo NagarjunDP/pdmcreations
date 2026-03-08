@@ -33,7 +33,7 @@ export default function Services() {
     {
       id: 'naming',
       title: 'Naming Ceremony',
-      icon: '�',
+      icon: '👶',
       color: 'from-blue-600 to-cyan-600',
       lightColor: 'from-blue-50 to-cyan-50',
       description: 'Celebrate new beginnings with elegance',
@@ -60,7 +60,7 @@ export default function Services() {
     {
       id: 'halfsaree',
       title: 'Halfsaree',
-      icon: '�',
+      icon: '🌸',
       color: 'from-rose-600 to-pink-600',
       lightColor: 'from-rose-50 to-pink-50',
       description: 'Traditional decor for halfsaree functions',
@@ -118,7 +118,7 @@ export default function Services() {
       color: 'from-purple-600 to-fuchsia-600',
       lightColor: 'from-purple-50 to-fuchsia-50',
       description: 'Creative plate decor for special ceremonies',
-      image: '/plate7.jpeg',
+      image: '/baby6.jpeg',
       highlights: ['Engagement Plates', 'Aarti Thali', 'Bridal Trousseau', 'Gift Packing'],
       packages: [
         {
@@ -134,7 +134,7 @@ export default function Services() {
           items: ['Luxury trousseau packing', 'Exotic flower accents', 'Custom personalized tags', 'LED integrated displays'],
         },
       ],
-      gallery: ['/plate1.jpeg', '/plate2.jpeg', '/plate3.jpeg', '/plate4.jpeg', '/plate5.jpeg', '/plate6.jpeg', '/plate7.jpeg', '/plate8.jpeg', '/plate9.jpeg', '/plate10.jpeg'],
+      gallery: ['/baby1.jpeg', '/baby2.jpeg', '/baby3.jpeg', '/baby4.jpeg', '/baby5.jpeg', '/baby7.jpeg'],
     },
 
     // 5️⃣ Haldi
@@ -249,7 +249,7 @@ export default function Services() {
     {
       id: 'rentals',
       title: 'Rentals',
-      icon: '�',
+      icon: '📦',
       color: 'from-gray-600 to-slate-500',
       lightColor: 'from-gray-50 to-slate-50',
       description: 'Event rentals including props and decor items',
@@ -291,7 +291,7 @@ export default function Services() {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: 'easeOut' },
+      transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as any },
     },
   };
 
@@ -319,7 +319,7 @@ export default function Services() {
       {/* Main Content */}
       <div className="relative z-10">
         {/* Hero Section */}
-        <section className="pt-32 md:pt-40 lg:pt-48 pb-20 md:pb-28 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-blue-50 via-pink-50 to-purple-50">
+        <section className="pt-24 md:pt-32 lg:pt-40 pb-16 md:pb-24 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-blue-50 via-pink-50 to-purple-50">
           <div className="max-w-7xl mx-auto relative">
 
             {/* Decorative Butterfly - pushed a bit lower so it doesn't clash */}

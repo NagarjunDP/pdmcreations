@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import { Instagram, Facebook, PhoneCallIcon, Phone, Mail, MapPin } from "lucide-react";
 import { MapView } from "../components/Map";
 
+const LOGO_SRC = "/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.png";
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
@@ -19,7 +21,7 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "https://www.instagram.com/pdmcreations?igsh=cmo5NHNzdThkdng5", label: "Instagram" },
+    { icon: Instagram, href: "https://www.instagram.com/pdmcreations/", label: "Instagram" },
 
     { icon: PhoneCallIcon, href: "tel:+918884076143", label: "Call" },
   ];
@@ -48,9 +50,11 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
               <motion.div whileHover={{ rotate: 8, scale: 1.1 }}>
-                <div className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-black text-xl shadow-lg shadow-pink-500/20">
-                  P
-                </div>
+                <img
+                  src={LOGO_SRC}
+                  alt="PDM Logo"
+                  className="h-16 w-16 md:h-20 md:w-20 object-contain filter drop-shadow-[0_0_10px_rgba(236,72,153,0.3)]"
+                />
               </motion.div>
               <span className="font-bold text-lg text-pink-400">
                 PDM Creations
