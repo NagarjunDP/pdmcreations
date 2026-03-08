@@ -15,7 +15,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const WHATSAPP_NUMBER = "+919538067336";
+  const WHATSAPP_NUMBER = "+918884076143";
   const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID"; // CHANGE THIS!
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -43,11 +43,11 @@ export default function Contact() {
 ${formData.message}
 
 ---
-Sent from Adhishakthi Flowers Website
+Sent from PDM Creations Website
     `.trim();
 
     const encodedMessage = encodeURIComponent(message);
-    const whatsappURL = `https://wa.me/${+919538067336}?text=${encodedMessage}`;
+    const whatsappURL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');
 
     // === 2. SEND TO EMAIL (via Formspree) ===
@@ -94,9 +94,9 @@ Sent from Adhishakthi Flowers Website
   };
 
   const contactInfo = [
-    { icon: Phone, title: 'Phone', value: '+91 95380 67336', link: 'tel:+919538067336' },
-    { icon: Mail, title: 'Email', value: 'cheluvarajusraju823@gmail.com', link: 'mailto:cheluvarajusraju823@gmail.com' },
-    { icon: MapPin, title: 'Location', value: 'Tumakuru', link: '#' },
+    { icon: Phone, title: 'Phone', value: '+91 88840 76143', link: 'tel:+918884076143' },
+    { icon: Mail, title: 'Email', value: 'pdplatedecors@gmail.com', link: 'mailto:pdplatedecors@gmail.com' },
+    { icon: MapPin, title: 'Location', value: 'Bengaluru', link: 'https://maps.app.goo.gl/2avTFHTyJE7A3pW69' },
   ];
 
   return (
@@ -223,13 +223,14 @@ Sent from Adhishakthi Flowers Website
                   className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:outline-none focus:border-pink-500 transition-colors duration-300"
                 >
                   <option value="">Select event type</option>
-                  <option value="haldi">Haldi Decorations</option>
-                  <option value="wedding">Wedding Decorations</option>
-                  <option value="engagement">Enagagement Decorations</option>
-                  <option value="naming">Naming Ceremony</option>
-                  <option value="chapra">Chapra Decorations</option>
-                  <option value="flower">Flower Decorations</option>
-                  <option value="other">Other</option>
+                  <option value="naming">Naming ceremony</option>
+                  <option value="halfsaree">Halfsaree</option>
+                  <option value="plate">Plate decoration</option>
+                  <option value="haldi">Haldi</option>
+                  <option value="housewarming">House warming</option>
+                  <option value="chapra">Chapra</option>
+                  <option value="rentals">Rentals</option>
+                  <option value="other">other</option>
                 </select>
               </motion.div>
 
@@ -282,7 +283,7 @@ Sent from Adhishakthi Flowers Website
                 ) : (
                   <>
                     <Send size={20} />
-                    Send via WhatsApp 
+                    Send via WhatsApp
                   </>
                 )}
               </motion.button>
@@ -301,13 +302,13 @@ Sent from Adhishakthi Flowers Website
             Call us directly or fill out the form above. We're here to help!
           </motion.p>
           <motion.a
-            href="tel:+919538067336"
+            href="tel:+918884076143"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-10 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-lg hover:shadow-2xl transition-all duration-300 shadow-lg text-lg"
           >
             <Phone size={24} />
-            Call Now: +91 95380 67336
+            Call Now: +91 88840 76143
           </motion.a>
         </div>
       </section>

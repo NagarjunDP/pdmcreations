@@ -29,222 +29,249 @@ export default function Services() {
   const [activePackageIndex, setActivePackageIndex] = useState(0);
 
   const services: ServicePackage[] = [
-  // 1️⃣ Wedding
-  {
-    id: 'wedding',
-    title: 'Wedding Stage',
-    icon: '💍',
-    color: 'from-rose-600 to-pink-600',
-    lightColor: 'from-rose-50 to-pink-50',
-    description: 'End-to-end coordination for your dream day',
-    image: 'eng1.JPG',
-    highlights: ['Stage Setup', 'Mandaps', 'Lighting', 'Florals'],
-    packages: [
-      {
-        name: 'Standard Wedding',
-        items: ['Wedding stage decoration', 'Welcome board', 'Ramp decoration', 'Mantapa decoration', 'Grand reception garlands'],
-      },
-      {
-        name: 'Premium Wedding',
-        items: ['All Standard features', 'Grand muhurtham garlands', 'Mallige dindu', 'Extra tied flowers', 'VIP garlands'],
-      },
-      {
-        name: 'Complete Wedding',
-        items: ['All Premium features', 'Home decoration', 'Food catering', 'Photo booth', '360 selfie booth', 'Photography & Videography'],
-      },
-    ],
-    gallery: ['/new1.jpeg', '/new2.jpeg', '/new3.jpeg', '/new4.jpeg'],
-  },
+    // 1️⃣ Naming Ceremony
+    {
+      id: 'naming',
+      title: 'Naming Ceremony',
+      icon: '�',
+      color: 'from-blue-600 to-cyan-600',
+      lightColor: 'from-blue-50 to-cyan-50',
+      description: 'Celebrate new beginnings with elegance',
+      image: '/name1.jpeg',
+      highlights: ['Stage Setup', 'Custom Props', 'Photography', 'Entertainment'],
+      packages: [
+        {
+          name: 'Basic Naming',
+          items: ['Stage decoration', 'Theme backdrop', 'Balloon decoration', 'Welcome board', 'Entrance decoration'],
+        },
+        {
+          name: 'Standard Naming',
+          items: ['All Basic features', 'Garlands', 'Mallige dindu', 'LED name display', 'Photo booth', 'Photography & Videography'],
+        },
+        {
+          name: 'Premium Naming',
+          items: ['All Standard features', 'Neon light board', 'Sound system', 'Catering', 'Coordination support'],
+        },
+      ],
+      gallery: ['/name1.jpeg', '/name2.jpeg', '/name3.jpeg', '/name4.jpeg', '/name5.jpeg', '/name6.jpeg', '/name7.jpeg', '/name8.jpeg', '/name9.jpeg', '/name10.jpeg'],
+    },
 
-  // 2️⃣ Naming Board Decoration
-  {
-    id: 'naming-board',
-    title: 'Naming Board Decoration',
-    icon: '🎨',
-    color: 'from-amber-500 to-orange-600',
-    lightColor: 'from-amber-50 to-orange-50',
-    description: 'Customized name reveals and artistic board designs',
-    image: '/name1.jpeg',
-    highlights: ['Custom Typography', 'Floral Borders', 'LED Lighting', 'Themed Props'],
-    packages: [
-      {
-        name: 'Classic Board',
-        items: ['Hand-painted name board', 'Basic floral border', 'Easel stand rental', 'Welcome signage'],
-      },
-      {
-        name: 'Elite Board',
-        items: ['3D Acrylic lettering', 'Premium exotic flower framing', 'Spotlight arrangement', 'Themed background fabric'],
-      },
-      {
-        name: 'Grand Reveal',
-        items: ['Neon light name board', 'Full floral wall backdrop', 'Automatic reveal curtain', 'Cold fire entry sparkles'],
-      },
-    ],
-    gallery: ['/name2.jpeg', '/name3.jpeg', '/name4.jpeg'],
-  },
+    // 2️⃣ Halfsaree
+    {
+      id: 'halfsaree',
+      title: 'Halfsaree',
+      icon: '�',
+      color: 'from-rose-600 to-pink-600',
+      lightColor: 'from-rose-50 to-pink-50',
+      description: 'Traditional decor for halfsaree functions',
+      image: '/half11.jpeg',
+      highlights: ['Traditional Themes', 'Floral Designs', 'Stage Decoration', 'Lighting'],
+      packages: [
+        {
+          name: 'Basic Halfsaree',
+          items: ['Simple stage backdrop', 'Flower decoration', 'Seating setup'],
+        },
+        {
+          name: 'Standard Halfsaree',
+          items: ['All Basic features', 'Theme-based décor', 'Entrance arrangement', 'Lighting'],
+        },
+        {
+          name: 'Premium Halfsaree',
+          items: ['All Standard features', 'Grand floral stage', 'Photo booth', 'Complete event management'],
+        },
+      ],
+      gallery: ['/half1.jpeg', '/half2.jpeg', '/half3.jpeg', '/half4.jpeg', '/half5.jpeg', '/half6.jpeg', '/half7.jpeg', '/half8.jpeg', '/half9.jpeg', '/half10.jpeg', '/half11.jpeg'],
+    },
 
-  // 3️⃣ Mantapa Decoration
-  {
-    id: 'mantapa',
-    title: 'Mantapa Decoration',
-    icon: '🏛',
-    color: 'from-gold-600 to-yellow-700',
-    lightColor: 'from-yellow-50 to-orange-50',
-    description: 'Traditional and contemporary Mandap setups for sacred rituals',
-    image: '/mantapaa2.jpeg',
-    highlights: ['Traditional Carvings', 'Fresh Flower Drapes', 'Seating Logic', 'Sacred Fire Setup'],
-    packages: [
-      {
-        name: 'Traditional Mantapa',
-        items: ['Wooden pillar structure', 'Marigold & Mango leaf hangings', 'Standard backdrop', 'Seating for priest'],
-      },
-      {
-        name: 'Contemporary Mantapa',
-        items: ['Fiber/Acrylic pillars', 'Rose & Lily floral ceiling', 'Chandelier lighting', 'Carpeted flooring'],
-      },
-      {
-        name: 'Royal Mantapa',
-        items: ['Temple-style grand structure', 'Exotic orchid hangings', 'VIP upholstered seating', 'Water fountain backdrop'],
-      },
-    ],
-    gallery: ['/mantapaa1.jpeg', '/man3.jpg', '/man4.jpg', '/man5.jpg'],
-  },
+    // 3️⃣ Baby Shower
+    {
+      id: 'babyshower',
+      title: 'Baby Shower',
+      icon: '🤰',
+      color: 'from-pink-500 to-rose-400',
+      lightColor: 'from-pink-50 to-rose-50',
+      description: 'Beautiful decor for welcoming your little one',
+      image: '/baby3.jpeg',
+      highlights: ['Baby Shower Themes', 'Floral Arches', 'Custom Backdrops', 'Photo Booth'],
+      packages: [
+        {
+          name: 'Basic Baby Shower',
+          items: ['Backdrop decoration', 'Balloon arch', 'Welcome board'],
+        },
+        {
+          name: 'Standard Baby Shower',
+          items: ['All Basic features', 'Floral additions', 'Prop setup', 'Seating decoration'],
+        },
+        {
+          name: 'Premium Baby Shower',
+          items: ['All Standard features', 'Custom theme design', 'Premium florals', 'Full room transformation'],
+        },
+      ],
+      gallery: ['/baby4.jpeg', '/baby5.jpeg', '/baby6.jpeg', '/baby7.jpeg', '/baby8.jpeg', '/baby9.jpeg'],
+    },
 
-  // 4️⃣ Haldi
-  {
-    id: 'haldi',
-    title: 'Haldi Decoration',
-    icon: '🌼',
-    color: 'from-yellow-600 to-orange-500',
-    lightColor: 'from-yellow-50 to-orange-50',
-    description: 'Vibrant and joyful haldi celebrations',
-    image: '/haltop.jpeg',
-    highlights: ['Marigold Setup', 'Traditional Décor', 'Seating Setup', 'Photography'],
-    packages: [
-      {
-        name: 'Basic Haldi',
-        items: ['Backdrop decoration', 'Marigold strings', 'Floor seating', 'Basic props'],
-      },
-      {
-        name: 'Standard Haldi',
-        items: ['All Basic features', 'Floral backdrop', 'Brass props', 'Chair decoration', 'Photo corner'],
-      },
-      {
-        name: 'Premium Haldi',
-        items: ['All Standard features', 'Stage setup', 'Custom floral design', 'Lighting', 'Event coordination'],
-      },
-    ],
-    gallery: ['/hal2.jpg', '/hal3.jpg', '/hal4.jpg', '/hal5.jpg'],
-  },
+    // 4️⃣ Plate Decoration
+    {
+      id: 'platedecoration',
+      title: 'Plate Decoration',
+      icon: '✨',
+      color: 'from-purple-600 to-fuchsia-600',
+      lightColor: 'from-purple-50 to-fuchsia-50',
+      description: 'Creative plate decor for special ceremonies',
+      image: '/plate7.jpeg',
+      highlights: ['Engagement Plates', 'Aarti Thali', 'Bridal Trousseau', 'Gift Packing'],
+      packages: [
+        {
+          name: 'Basic Plates',
+          items: ['Standard decoration design', 'Floral borders', 'Basic wrapping'],
+        },
+        {
+          name: 'Standard Plates',
+          items: ['Custom themed plates', 'Premium ribbons & nets', 'Acrylic bases'],
+        },
+        {
+          name: 'Premium Plates',
+          items: ['Luxury trousseau packing', 'Exotic flower accents', 'Custom personalized tags', 'LED integrated displays'],
+        },
+      ],
+      gallery: ['/plate1.jpeg', '/plate2.jpeg', '/plate3.jpeg', '/plate4.jpeg', '/plate5.jpeg', '/plate6.jpeg', '/plate7.jpeg', '/plate8.jpeg', '/plate9.jpeg', '/plate10.jpeg'],
+    },
 
-  // 5️⃣ Engagement
-  {
-    id: 'engagement-stage',
-    title: 'Engagement Stage',
-    icon: '💍',
-    color: 'from-indigo-600 to-purple-600',
-    lightColor: 'from-indigo-50 to-purple-50',
-    description: 'Beautiful setups for a perfect engagement',
-    image: '/engage1.png',
-    highlights: ['Stage Décor', 'Ring Ceremony', 'Floral Backdrops', 'Photography'],
-    packages: [
-      {
-        name: 'Basic Engagement',
-        items: ['Stage backdrop', 'Sofa seating', 'Flower decoration'],
-      },
-      {
-        name: 'Standard Engagement',
-        items: ['All Basic features', 'Theme-based décor', 'Lighting setup', 'Entrance décor'],
-      },
-      {
-        name: 'Premium Engagement',
-        items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'],
-      },
-    ],
-    gallery: ['/engage4.jpg', '/engage2.jpg', '/engage3.jpg', '/engage5.jpg'],
-  },
+    // 5️⃣ Haldi
+    {
+      id: 'haldi',
+      title: 'Haldi Decoration',
+      icon: '🌼',
+      color: 'from-yellow-600 to-orange-500',
+      lightColor: 'from-yellow-50 to-orange-50',
+      description: 'Vibrant and joyful haldi celebrations',
+      image: '/hal1.jpeg',
+      highlights: ['Marigold Setup', 'Traditional Décor', 'Seating Setup', 'Photography'],
+      packages: [
+        {
+          name: 'Basic Haldi',
+          items: ['Backdrop decoration', 'Marigold strings', 'Floor seating', 'Basic props'],
+        },
+        {
+          name: 'Standard Haldi',
+          items: ['All Basic features', 'Floral backdrop', 'Brass props', 'Chair decoration', 'Photo corner'],
+        },
+        {
+          name: 'Premium Haldi',
+          items: ['All Standard features', 'Stage setup', 'Custom floral design', 'Lighting', 'Event coordination'],
+        },
+      ],
+      gallery: ['/hal1.jpeg', '/hal2.jpeg', '/hal3.jpeg', '/hal4.jpeg', '/hal5.jpeg', '/hal6.jpeg'],
+    },
 
-  // 6️⃣ Entry Decoration
-  {
-    id: 'entry-decoration',
-    title: 'Entry Decoration',
-    icon: '🌸',
-    color: 'from-rose-600 to-pink-600',
-    lightColor: 'from-rose-50 to-pink-50',
-    description: 'Elegant floral designs for every occasion',
-    image: '/entry1.jpeg',
-    highlights: ['Fresh Flowers', 'Custom Themes', 'Premium Finish', 'Lighting'],
-    packages: [
-      {
-        name: 'Basic Flowers',
-        items: ['Simple flower backdrop', 'Stage flowers', 'Entrance decoration'],
-      },
-      {
-        name: 'Standard Flowers',
-        items: ['All Basic features', 'Mixed flower setup', 'Ceiling hangings', 'Side décor'],
-      },
-      {
-        name: 'Premium Flowers',
-        items: ['All Standard features', 'Exotic flowers', 'Custom floral structures', 'Designer lighting'],
-      },
-    ],
-    gallery: ['/entry2.jpeg', '/entry3.jpeg', '/entry4.jpeg', '/entry5.jpeg'],
-  },
+    // 6️⃣ House Warming
+    {
+      id: 'housewarming',
+      title: 'House Warming',
+      icon: '🏠',
+      color: 'from-emerald-600 to-teal-500',
+      lightColor: 'from-emerald-50 to-teal-50',
+      description: 'Elegant setups for your new home',
+      image: '/house1.jpeg',
+      highlights: ['Entrance arches', 'Puja room decor', 'Wall drapes', 'Staircase florals'],
+      packages: [
+        {
+          name: 'Basic House Warming',
+          items: ['Main door floral arch', 'Mango leaf torans', 'Basic puja room decor'],
+        },
+        {
+          name: 'Standard House Warming',
+          items: ['All Basic features', 'Staircase flower rangoli', 'Living room drapes', 'Balcony decoration'],
+        },
+        {
+          name: 'Premium House Warming',
+          items: ['All Standard features', 'Full exterior floral highlights', 'Exotic flowers setup', 'Complete interior styling'],
+        },
+      ],
+      gallery: ['/house1.jpeg', '/house2.jpeg', '/house3.jpeg', '/house4.jpeg', '/house5.jpeg', '/house6.jpeg', '/house7.jpeg'],
+    },
 
-  // 7️⃣ Chapra Decoration
-  {
-    id: 'chapra-decoration',
-    title: 'Chapra Decoration',
-    icon: '⛺',
-    color: 'from-green-600 to-emerald-600',
-    lightColor: 'from-green-50 to-emerald-50',
-    description: 'Traditional chapra setups with a modern touch',
-    image: '/chap1.jpg',
-    highlights: ['Traditional Style', 'Floral Drapes', 'Seating', 'Lighting'],
-    packages: [
-      {
-        name: 'Basic Chapra',
-        items: ['Chapra structure', 'Cloth draping', 'Basic lighting'],
-      },
-      {
-        name: 'Standard Chapra',
-        items: ['All Basic features', 'Flower decoration', 'Carpet flooring', 'Seating arrangement'],
-      },
-      {
-        name: 'Premium Chapra',
-        items: ['All Standard features', 'Designer drapes', 'Hanging décor', 'Full event coordination'],
-      },
-    ],
-    gallery: ['/chap2.jpg', '/chap3.jpg', '/chap4.jpg', '/chap5.jpg'],
-  },
+    // 7️⃣ Engagement
+    {
+      id: 'engagement',
+      title: 'Engagement Stage',
+      icon: '💍',
+      color: 'from-indigo-600 to-purple-600',
+      lightColor: 'from-indigo-50 to-purple-50',
+      description: 'Beautiful setups for a perfect engagement',
+      image: '/eng5.jpeg',
+      highlights: ['Stage Décor', 'Ring Ceremony', 'Floral Backdrops', 'Photography'],
+      packages: [
+        {
+          name: 'Basic Engagement',
+          items: ['Stage backdrop', 'Sofa seating', 'Flower decoration'],
+        },
+        {
+          name: 'Standard Engagement',
+          items: ['All Basic features', 'Theme-based décor', 'Lighting setup', 'Entrance décor'],
+        },
+        {
+          name: 'Premium Engagement',
+          items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'],
+        },
+      ],
+      gallery: ['/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg'],
+    },
 
-  // 8️⃣ Naming Ceremony
-  {
-    id: 'naming',
-    title: 'Naming Ceremony',
-    icon: '👶',
-    color: 'from-blue-600 to-cyan-600',
-    lightColor: 'from-blue-50 to-cyan-50',
-    description: 'Celebrate new beginnings with elegance',
-    image: '/baby1.jpg',
-    highlights: ['Stage Setup', 'Custom Props', 'Photography', 'Entertainment'],
-    packages: [
-      {
-        name: 'Basic Naming',
-        items: ['Stage decoration', 'Theme backdrop', 'Balloon decoration', 'Welcome board', 'Entrance decoration'],
-      },
-      {
-        name: 'Standard Naming',
-        items: ['All Basic features', 'Garlands', 'Mallige dindu', 'LED name display', 'Photo booth', 'Photography & Videography'],
-      },
-      {
-        name: 'Premium Naming',
-        items: ['All Standard features', 'Neon light board', 'Sound system', 'Catering', 'Coordination support'],
-      },
-    ],
-    gallery: ['/baby2.jpg', '/baby3.png', '/baby4.png', '/baby5.JPG'],
-  },
-];
+    // 8️⃣ Chapra
+    {
+      id: 'chapra',
+      title: 'Chapra Decoration',
+      icon: '⛺',
+      color: 'from-green-600 to-emerald-600',
+      lightColor: 'from-green-50 to-emerald-50',
+      description: 'Traditional chapra setups with a modern touch',
+      image: '/chapra1.jpeg',
+      highlights: ['Traditional Style', 'Floral Drapes', 'Seating', 'Lighting'],
+      packages: [
+        {
+          name: 'Basic Chapra',
+          items: ['Chapra structure', 'Cloth draping', 'Basic lighting'],
+        },
+        {
+          name: 'Standard Chapra',
+          items: ['All Basic features', 'Flower decoration', 'Carpet flooring', 'Seating arrangement'],
+        },
+        {
+          name: 'Premium Chapra',
+          items: ['All Standard features', 'Designer drapes', 'Hanging décor', 'Full event coordination'],
+        },
+      ],
+      gallery: ['/chapra1.jpeg'],
+    },
+
+    // 9️⃣ Rentals
+    {
+      id: 'rentals',
+      title: 'Rentals',
+      icon: '�',
+      color: 'from-gray-600 to-slate-500',
+      lightColor: 'from-gray-50 to-slate-50',
+      description: 'Event rentals including props and decor items',
+      image: '/rent1.jpeg',
+      highlights: ['Decor Props', 'Seating', 'Lighting Equipment', 'Backdrops'],
+      packages: [
+        {
+          name: 'Basic Rentals',
+          items: ['Chairs & Tables', 'Basic props', 'Standard lighting'],
+        },
+        {
+          name: 'Standard Rentals',
+          items: ['Premium seating', 'Themed props', 'Sound equipment', 'Decorative lighting'],
+        },
+        {
+          name: 'Premium Packages',
+          items: ['Complete stage structures', 'Luxury furniture', 'Special effects equipment', 'LED screens'],
+        },
+      ],
+      gallery: ['/rent1.jpeg'],
+    },
+  ]
 
   const selectedServiceData = services.find(s => s.id === selectedService);
 
@@ -293,30 +320,30 @@ export default function Services() {
       <div className="relative z-10">
         {/* Hero Section */}
         <section className="pt-32 md:pt-40 lg:pt-48 pb-20 md:pb-28 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-blue-50 via-pink-50 to-purple-50">
-  <div className="max-w-7xl mx-auto relative">
+          <div className="max-w-7xl mx-auto relative">
 
-    {/* Decorative Butterfly - pushed a bit lower so it doesn't clash */}
-    <div className="absolute top-8 right-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 hidden sm:block pointer-events-none opacity-60">
-      <ButterflyAnimation />
-    </div>
+            {/* Decorative Butterfly - pushed a bit lower so it doesn't clash */}
+            <div className="absolute top-8 right-0 w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 hidden sm:block pointer-events-none opacity-60">
+              <ButterflyAnimation />
+            </div>
 
-    {/* Heading & Description - now beautifully centered with proper top spacing */}
-    <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.9, ease: "easeOut" }}
-      className="text-center max-w-5xl mx-auto"
-    >
-      <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-8 leading-tight">
-        Services &<br className="sm:hidden" /> Packages
-      </h1>
-      <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
-        Discover our comprehensive collection of event decoration and management solutions.<br />
-        Each package is crafted to bring your celebration to life with elegance and energy.
-      </p>
-    </motion.div>
-  </div>
-</section>
+            {/* Heading & Description - now beautifully centered with proper top spacing */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: "easeOut" }}
+              className="text-center max-w-5xl mx-auto"
+            >
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-blue-600 via-pink-500 to-purple-600 bg-clip-text text-transparent mb-8 leading-tight">
+                Services &<br className="sm:hidden" /> Packages
+              </h1>
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed px-4">
+                Discover our comprehensive collection of event decoration and management solutions.<br />
+                Each package is crafted to bring your celebration to life with elegance and energy.
+              </p>
+            </motion.div>
+          </div>
+        </section>
 
 
 
@@ -506,7 +533,7 @@ export default function Services() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                 {/* Phone */}
                 <motion.a
-                  href="tel:+919538067336"
+                  href="tel:+918884076143"
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-4 p-6 bg-white rounded-2xl border border-blue-200/50 hover:border-blue-400/50 hover:shadow-lg transition-all duration-300"
@@ -516,58 +543,58 @@ export default function Services() {
                   </div>
                   <div>
                     <p className="text-sm text-gray-600 font-medium">Call Now</p>
-                    <p className="text-lg font-bold text-gray-900">+91 95380 67336</p>
+                    <p className="text-lg font-bold text-gray-900">+91 88840 76143</p>
                   </div>
                 </motion.a>
 
                 {/* Email */}
                 <motion.a
-  href="mailto:cheluvarajusraju823@gmail.com"
-  whileHover={{ scale: 1.02 }}
-  whileTap={{ scale: 0.98 }}
-  className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-white rounded-2xl border border-purple-200/50 hover:border-purple-400/50 hover:shadow-lg transition-all duration-300 w-full overflow-hidden"
->
-  {/* Icon - Made slightly smaller on mobile to save space */}
-  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center">
-    <Mail size={22} className="text-purple-600 md:size-24" />
-  </div>
+                  href="mailto:pdplatedecors@gmail.com"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="flex items-center gap-3 md:gap-4 p-4 md:p-6 bg-white rounded-2xl border border-purple-200/50 hover:border-purple-400/50 hover:shadow-lg transition-all duration-300 w-full overflow-hidden"
+                >
+                  {/* Icon - Made slightly smaller on mobile to save space */}
+                  <div className="flex-shrink-0 w-12 h-12 md:w-14 md:h-14 bg-gradient-to-br from-purple-100 to-pink-100 rounded-full flex items-center justify-center">
+                    <Mail size={22} className="text-purple-600 md:size-24" />
+                  </div>
 
-  {/* Text Content - overflow-hidden is key here */}
-  <div className="flex-1 min-w-0">
-    <p className="text-xs md:text-sm text-gray-600 font-medium">Email Us</p>
-    <p className="text-sm md:text-lg font-bold text-gray-900 break-all md:break-normal leading-tight">
-      cheluvarajusraju823@gmail.com
-    </p>
-  </div>
-</motion.a>
+                  {/* Text Content - overflow-hidden is key here */}
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs md:text-sm text-gray-600 font-medium">Email Us</p>
+                    <p className="text-sm md:text-lg font-bold text-gray-900 break-all md:break-normal leading-tight">
+                      pdplatedecors@gmail.com
+                    </p>
+                  </div>
+                </motion.a>
               </div>
 
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <motion.a
-            href="/contact"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 text-lg text-center inline-block"
-          >
-            Book Now
-          </motion.a>
+                <motion.a
+                  href="/contact"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold rounded-xl hover:shadow-lg transition-all duration-300 text-lg text-center inline-block"
+                >
+                  Book Now
+                </motion.a>
 
-          <motion.a
-            href="tel:+919538067336"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 text-lg text-center inline-block"
-          >
-            Contact Now
-          </motion.a>
-        </div>
-        
-      {/* ADD THESE THREE CLOSING TAGS BELOW */}
-      </motion.div> 
-    </div>
-  </section>
-            
+                <motion.a
+                  href="tel:+918884076143"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="px-8 py-4 border-2 border-gray-900 text-gray-900 font-bold rounded-xl hover:bg-gray-50 transition-all duration-300 text-lg text-center inline-block"
+                >
+                  Contact Now
+                </motion.a>
+              </div>
+
+              {/* ADD THESE THREE CLOSING TAGS BELOW */}
+            </motion.div>
+          </div>
+        </section>
+
 
         {/* Why Choose Us Section */}
         <section className="px-4 md:px-8 lg:px-16 py-12 md:py-16">
@@ -579,7 +606,7 @@ export default function Services() {
               className="mb-12"
             >
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                Why Choose Adhishakthi Flowers?
+                Why Choose PDM Creations?
               </h2>
               <p className="text-gray-600 text-lg max-w-2xl">
                 We deliver exceptional quality at budget-friendly prices without compromising on excellence.
@@ -675,11 +702,10 @@ export default function Services() {
                         <motion.button
                           key={idx}
                           onClick={() => setActivePackageIndex(idx)}
-                          className={`px-4 py-2 rounded-full font-semibold whitespace-nowrap transition-all ${
-                            activePackageIndex === idx
-                              ? 'bg-gray-900 text-white'
-                              : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                          }`}
+                          className={`px-4 py-2 rounded-full font-semibold whitespace-nowrap transition-all ${activePackageIndex === idx
+                            ? 'bg-gray-900 text-white'
+                            : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                            }`}
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
@@ -743,7 +769,7 @@ export default function Services() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 pt-8 border-t border-gray-200">
-                <motion.a
+                  <motion.a
                     href="/contact"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}

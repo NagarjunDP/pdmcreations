@@ -196,18 +196,18 @@ import { motion } from "framer-motion";
 import { Award, Heart, Sparkles, MapPin, User } from "lucide-react";
 
 // Logo Image
-const logoImage = "/1000170186-removebg-preview.png";
+const logoImage = "/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.png";
 
 export default function About() {
   const highlights = [
     {
       icon: Award,
-      title: "500+ Events Completed",
-      desc: "Successfully decorated weddings, functions, and celebrations.",
+      title: "250+ Events Completed",
+      desc: "Successfully decorated functions and celebrations.",
     },
     {
       icon: Sparkles,
-      title: "6+ Years Experience",
+      title: "3+ Years Experience",
       desc: "Trusted floral decoration expertise with consistent quality.",
     },
     {
@@ -226,25 +226,42 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           className="text-4xl md:text-5xl font-bold text-slate-900"
         >
-          About Adhishakthi Flowers
+          About PDM Creations
         </motion.h1>
         <p className="text-slate-600 mt-4 max-w-2xl mx-auto">
           Creating beautiful floral experiences for every special occasion
         </p>
       </section>
 
-      {/* Center Logo */}
-      <section className="flex justify-center mb-16">
+      {/* Premium Brand Mark */}
+      <section className="flex justify-center mb-16 px-4">
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          className="w-40 md:w-56 rounded-xl shadow-lg overflow-hidden"
+          className="group flex flex-col items-center gap-6"
         >
-          <img
-            src={logoImage}
-            alt="Adhishakthi Flowers Logo"
-            className="w-full h-full object-contain p-4"
-          />
+          {/* Logo Icon Container */}
+          <motion.div
+            whileHover={{ scale: 1.05, rotate: 5 }}
+            className="relative h-32 w-32 md:h-44 md:w-44 flex items-center justify-center p-6 bg-gradient-to-br from-pink-500/10 to-purple-600/20 rounded-3xl backdrop-blur-md border border-pink-200/30 shadow-2xl shadow-pink-500/10"
+          >
+            <div className="absolute inset-0 bg-white/40 rounded-3xl -z-10" />
+            <img
+              src={logoImage}
+              alt="PDM Creations Logo"
+              className="w-full h-full object-contain filter drop-shadow-[0_0_15px_rgba(236,72,153,0.4)]"
+            />
+          </motion.div>
+
+          {/* Brand Text Stacking */}
+          <div className="text-center">
+            <h2 className="text-4xl md:text-5xl font-black tracking-tighter font-serif text-slate-900 leading-none">
+              PDM<span className="text-pink-600">.</span>
+            </h2>
+            <p className="text-sm md:text-base font-bold tracking-[0.4em] uppercase text-purple-600 mt-2">
+              Creations
+            </p>
+          </div>
         </motion.div>
       </section>
 
@@ -260,14 +277,14 @@ export default function About() {
             </h2>
             <p className="text-slate-700 leading-relaxed mb-4">
               <span className="font-semibold text-pink-600">
-                Adhishakthi Flowers
+                PDM Creations
               </span>{" "}
-              is a professional flower decoration service based in Tumakuru,
+              is a professional flower decoration service based in Bengaluru,
               specializing in weddings, events, and traditional functions.
             </p>
             <p className="text-slate-700 leading-relaxed">
-              With over <b>6 years of experience</b> and{" "}
-              <b>500+ successful events</b>, we are known for elegant designs,
+              With over <b>3 years of experience</b> and{" "}
+              <b>250+ successful events</b>, we are known for elegant designs,
               fresh flowers, and timely execution.
             </p>
           </motion.div>
@@ -285,10 +302,10 @@ export default function About() {
             </div>
 
             <h3 className="text-2xl font-bold text-slate-900 mb-1">
-              Cheluvaraju S
+              Pradeep
             </h3>
             <p className="text-slate-600 font-medium mb-3">
-              Founder – Adhishakthi Flowers
+              Founder – PDM Creations
             </p>
 
             <p className="text-slate-700 text-sm leading-relaxed">
@@ -322,10 +339,10 @@ export default function About() {
         <div className="max-w-4xl mx-auto text-center px-4">
           <MapPin className="w-8 h-8 text-purple-600 mx-auto mb-2" />
           <h3 className="text-2xl font-bold text-slate-900 mb-2">
-            Based in Tumakuru
+            Based in Bengaluru
           </h3>
           <p className="text-slate-600">
-            Serving Tumakuru and nearby areas with premium flower decorations
+            Serving Bengaluru and nearby areas with premium flower decorations
           </p>
         </div>
       </section>

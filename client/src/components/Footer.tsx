@@ -19,9 +19,9 @@ export default function Footer() {
   };
 
   const socialLinks = [
-    { icon: Instagram, href: "https://www.instagram.com/adhish_akthi_06flowers/", label: "Instagram" },
-    { icon: Facebook, href: "https://www.facebook.com/cheluvarajus.raju.35/videos/adhishakthi-flowers-tumkuru9538067336-wedding-stage-flowers-tumkur-flowerstagram/3130651843785836/", label: "Facebook" },
-    { icon: PhoneCallIcon, href: "tel:+919538067336", label: "Call" },
+    { icon: Instagram, href: "https://www.instagram.com/pdmcreations?igsh=cmo5NHNzdThkdng5", label: "Instagram" },
+
+    { icon: PhoneCallIcon, href: "tel:+918884076143", label: "Call" },
   ];
 
   return (
@@ -47,18 +47,18 @@ export default function Footer() {
           {/* Brand */}
           <motion.div variants={itemVariants} className="flex flex-col items-center md:items-start">
             <div className="flex items-center gap-3 mb-4">
-              <motion.div whileHover={{ rotate: 4 }}>
-                <div className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-bold">
-                  A
+              <motion.div whileHover={{ rotate: 8, scale: 1.1 }}>
+                <div className="h-10 w-10 bg-gradient-to-br from-pink-500 to-purple-600 rounded-lg flex items-center justify-center text-white font-black text-xl shadow-lg shadow-pink-500/20">
+                  P
                 </div>
               </motion.div>
               <span className="font-bold text-lg text-pink-400">
-                Adhishakthi Flowers
+                PDM Creations
               </span>
             </div>
 
             <p className="text-slate-400 text-sm leading-relaxed max-w-sm mx-auto md:mx-0">
-              Adhishakthi Flowers specializes in elegant flower decorations for
+              PDM Creations specializes in elegant flower decorations for
               weddings, engagements, haldi functions, chapra setups, and all
               special occasions. We bring beauty, tradition, and perfection to
               every event.
@@ -93,26 +93,26 @@ export default function Footer() {
             <ul className="space-y-3 text-sm w-full max-w-xs mx-auto md:mx-0">
               <li className="flex items-center justify-center md:justify-start gap-2">
                 <Phone size={16} className="text-pink-400" />
-                <a href="tel:+919538067336" className="hover:text-pink-400">
-                  +91 95380 67336
+                <a href="tel:+918884076143" className="hover:text-pink-400">
+                  +91 88840 76143
                 </a>
               </li>
 
               <li className="flex items-center justify-center md:justify-start gap-2 break-all">
                 <Mail size={16} className="text-pink-400" />
                 <a
-                  href="mailto:cheluvarajusraju823@gmail.com"
+                  href="mailto:pdplatedecors@gmail.com"
                   className="hover:text-pink-400"
                 >
-                  cheluvarajusraju823@gmail.com
+                  pdplatedecors@gmail.com
                 </a>
               </li>
 
               <li className="flex items-start justify-center md:justify-start gap-2">
                 <MapPin size={16} className="text-pink-400 mt-0.5" />
-                <span className="text-center md:text-left">
+                <a href="https://maps.app.goo.gl/2avTFHTyJE7A3pW69" target="_blank" className="hover:text-pink-400 text-center md:text-left">
                   Bangalore, Karnataka
-                </span>
+                </a>
               </li>
             </ul>
 
@@ -152,7 +152,7 @@ export default function Footer() {
           transition={{ duration: 0.6 }}
         >
           <div className="flex flex-col md:flex-row justify-center md:justify-between text-sm text-slate-400 gap-4 text-center md:text-left">
-            <p>© {currentYear} Adhishakthi Flowers. All rights reserved.</p>
+            <p>© {currentYear} PDM Creations. All rights reserved.</p>
             <div className="flex gap-6 justify-center">
               <a href="#" className="hover:text-pink-400">
                 Privacy Policy
@@ -166,5 +166,5 @@ export default function Footer() {
       </div>
     </footer>
   );
-                      }
-                               
+}
+

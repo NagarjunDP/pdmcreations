@@ -7,111 +7,101 @@ export default function Gallery() {
   const [filter, setFilter] = useState('all');
 
   const galleryImages = [
+    // 🔤 Naming Ceremony
+    { src: '/name1.jpeg', alt: 'Naming Ceremony Setup', category: 'naming' },
+    { src: '/name2.jpeg', alt: 'Traditional Naming Ceremony', category: 'naming' },
+    { src: '/name3.jpeg', alt: 'Naming Ceremony Stage', category: 'naming' },
+    { src: '/name4.jpeg', alt: 'Naming Ceremony Decoration', category: 'naming' },
+    { src: '/name5.jpeg', alt: 'Naming Welcome Board', category: 'naming' },
+    { src: '/name6.jpeg', alt: 'Naming Event Decoration', category: 'naming' },
+    { src: '/name7.jpeg', alt: 'Naming Ceremony Backdrop', category: 'naming' },
+    { src: '/name8.jpeg', alt: 'Naming Setup', category: 'naming' },
+    { src: '/name9.jpeg', alt: 'Naming Floral Design', category: 'naming' },
+    { src: '/name10.jpeg', alt: 'Naming Theme', category: 'naming' },
 
-    // 💒 Wedding Stage
-  { src: '/IMG-20251230-WA0002.jpg', alt: 'Wedding Stage Decoration', category: 'wedding' },
-  { src: '/wed3.jpg', alt: 'Wedding Mandap Decoration', category: 'wedding' },
-  { src: '/wed2.jpg', alt: 'Traditional Wedding Setup', category: 'wedding' },
-  { src: '/wed4.jpg', alt: 'Grand Wedding Decoration', category: 'wedding' },
- 
+    // 🎀 Halfsaree
+    { src: '/half1.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
+    { src: '/half2.jpeg', alt: 'Traditional Halfsaree Setup', category: 'halfsaree' },
+    { src: '/half3.jpeg', alt: 'Halfsaree Floral Decor', category: 'halfsaree' },
+    { src: '/half4.jpeg', alt: 'Halfsaree Event Design', category: 'halfsaree' },
+    { src: '/half5.jpeg', alt: 'Halfsaree Ceremony', category: 'halfsaree' },
+    { src: '/half6.jpeg', alt: 'Halfsaree Function', category: 'halfsaree' },
+    { src: '/half7.jpeg', alt: 'Halfsaree Celebration', category: 'halfsaree' },
+    { src: '/half8.jpeg', alt: 'Halfsaree Photography', category: 'halfsaree' },
+    { src: '/half9.jpeg', alt: 'Halfsaree Backdrop', category: 'halfsaree' },
+    { src: '/half10.jpeg', alt: 'Halfsaree Setup', category: 'halfsaree' },
+    { src: '/half11.jpeg', alt: 'Halfsaree Theme', category: 'halfsaree' },
+
+    // 🤰 Baby Shower
+    // { src: '/baby1.jpeg', alt: 'Baby Shower Setup', category: 'babyshower' },
+    // { src: '/baby2.jpeg', alt: 'Baby Shower Decoration', category: 'babyshower' },
+    { src: '/baby3.jpeg', alt: 'Baby Shower Floral Stage', category: 'babyshower' },
+    { src: '/baby4.jpeg', alt: 'Baby Shower Theme', category: 'babyshower' },
+    // { src: '/baby5.jpeg', alt: 'Baby Shower Stage', category: 'babyshower' },
+    { src: '/baby6.jpeg', alt: 'Baby Shower Background', category: 'babyshower' },
+    { src: '/baby7.jpeg', alt: 'Baby Shower Design', category: 'babyshower' },
+    { src: '/baby8.jpeg', alt: 'Baby Shower Decor', category: 'babyshower' },
+    { src: '/baby9.jpeg', alt: 'Baby Shower Celebration', category: 'babyshower' },
+    { src: '/baby10.jpeg', alt: 'Baby Shower Event', category: 'babyshower' },
+
+    // ✨ Plate Decoration
+    { src: '/plate7.jpeg', alt: 'Creative Plate Decoration', category: 'platedecoration' },
+    { src: '/plate2.jpeg', alt: 'Engagement Plate Display', category: 'platedecoration' },
+    { src: '/plate3.jpeg', alt: 'Aarti Thali Setup', category: 'platedecoration' },
+    { src: '/plate4.jpeg', alt: 'Bridal Trousseau Packing', category: 'platedecoration' },
+    { src: '/plate5.jpeg', alt: 'Plate Decor Design', category: 'platedecoration' },
+    { src: '/plate6.jpeg', alt: 'Ceremony Plates', category: 'platedecoration' },
+    { src: '/plate1.jpeg', alt: 'Plate Arrangements', category: 'platedecoration' },
+    { src: '/plate8.jpeg', alt: 'Engagement Trays', category: 'platedecoration' },
+    { src: '/plate9.jpeg', alt: 'Decorative Thali', category: 'platedecoration' },
+    { src: '/plate10.jpeg', alt: 'Gift Packing', category: 'platedecoration' },
+
+    // 🌼 Haldi
+    { src: '/hal1.jpeg', alt: 'Haldi Stage Setup', category: 'haldi' },
+    { src: '/hal2.jpeg', alt: 'Traditional Haldi Decoration', category: 'haldi' },
+    { src: '/hal3.jpeg', alt: 'Haldi Floral Backdrop', category: 'haldi' },
+    { src: '/hal4.jpeg', alt: 'Outdoor Haldi Design', category: 'haldi' },
+    { src: '/hal5.jpeg', alt: 'Haldi Function Setup', category: 'haldi' },
+    // { src: '/hal6.jpeg', alt: 'Haldi Event Decoration', category: 'haldi' },
+
+    // 🏠 House Warming
+    { src: '/house1.jpeg', alt: 'House Warming Entrance', category: 'housewarming' },
+    { src: '/house2.jpeg', alt: 'House Warming Floral Decor', category: 'housewarming' },
+    { src: '/house3.jpeg', alt: 'House Ceremony Setup', category: 'housewarming' },
+    { src: '/house4.jpeg', alt: 'Home Decoration Design', category: 'housewarming' },
+    { src: '/house6.jpeg', alt: 'House Warming Puja Decor', category: 'housewarming' },
+    { src: '/house5.jpeg', alt: 'House Warming Setup', category: 'housewarming' },
+    { src: '/house7.jpeg', alt: 'House Warming Exterior', category: 'housewarming' },
+
+    // 💍 Engagement
+    { src: '/eng5.jpeg', alt: 'Engagement Stage Setup', category: 'engagement' },
+    { src: '/eng2.jpeg', alt: 'Engagement Floral Backdrop', category: 'engagement' },
+    { src: '/eng3.jpeg', alt: 'Ring Ceremony Setup', category: 'engagement' },
+    // { src: '/eng5.jpeg', alt: 'Engagement Reception Decoration', category: 'engagement' },
+
+    // ⛺ Chapra
+    { src: '/chapra1.jpeg', alt: 'Chapra Decoration', category: 'chapra' },
+
+    // 📦 Rentals
+    { src: '/rent1.jpeg', alt: 'Event Seating Rentals', category: 'rentals' },
+  ];
 
 
-    // 💒 Naming Board
-  { src: '/name1.jpeg', alt: 'Wedding welcome name board decoration', category: 'board' },
-  { src: '/name2.jpeg', alt: 'Floral wedding name board setup', category: 'board' },
-  { src: '/name3.jpeg', alt: 'Traditional wedding name display board', category: 'board' },
-  { src: '/name4.jpeg', alt: 'Customized wedding name board decoration', category: 'board' },
-  
-
-
-    // 💒 Mantapa Decorations
-  { src: '/mantapaa2.jpeg', alt: 'Elegant wedding mantapa with marigold and rose flower decor', category: 'mantapa' },
-  { src: '/mantapaa1.jpeg', alt: 'Traditional South Indian wedding mantapa with floral pillars', category: 'mantapa' },
-  { src: '/man1.jpg', alt: 'Wedding mantapa decoration with flowers', category: 'mantapa' },
-  { src: '/man2.jpg', alt: 'Traditional wedding mantapa setup', category: 'mantapa' },
-  { src: '/man3.jpg', alt: 'South Indian wedding mantapa design', category: 'mantapa' },
-  { src: '/man4.jpg', alt: 'Grand mantapa decoration for wedding', category: 'mantapa' },
-  { src: '/man5.jpg', alt: 'Floral themed wedding mantapa decoration', category: 'mantapa' },
-
-
-    // 🌼 Haldi Decorations
-  { src: '/haltop.jpeg', alt: 'Haldi Decoration', category: 'haldi' },
-  { src: '/hal1.jpg', alt: 'Haldi Decoration', category: 'haldi' },
-  { src: '/hal2.jpg', alt: 'Traditional Haldi Setup', category: 'haldi' },
-  { src: '/hal3.jpg', alt: 'Haldi Backdrop Decoration', category: 'haldi' },
-  { src: '/hal4.jpg', alt: 'Haldi Stage Decoration', category: 'haldi' },
-  { src: '/hal5.jpg', alt: 'Outdoor Haldi Decoration', category: 'haldi' },
-
-
-     
-  // 💍 Engagement Stage
-  { src: '/engage1.png', alt: 'Engagement Stage Decoration', category: 'engagement' },
-  { src: '/engage2.jpg', alt: 'Engagement Floral Setup', category: 'engagement' },
-  { src: '/engage3.jpg', alt: 'Ring Ceremony Decoration', category: 'engagement' },
-  { src: '/engage4.jpg', alt: 'Engagement Backdrop', category: 'engagement' },
-  { src: '/engage5.jpg', alt: 'Engagement Event Setup', category: 'engagement' },
-
-
-     // 🌸 Entry Decorations
-  { src: '/entry5.jpeg', alt: 'Flower entrance decoration for wedding', category: 'entry' },
-  { src: '/entry2.jpeg', alt: 'Wedding stage entry flower decoration', category: 'entry' },
-  { src: '/entry3.jpeg', alt: 'Floral entrance decoration for events', category: 'entry' },
-  { src: '/entry4.jpeg', alt: 'Elegant floral theme entry decoration', category: 'entry' },
-  { src: '/entry1.jpeg', alt: 'Premium wedding entrance flower decor', category: 'entry' },
-  { src: '/entry6.jpeg', alt: 'Luxury floral entry decoration design', category: 'entry' },
-
-
-
-
-     // ⛺ Chapra Decorations
-  { src: '/chap1.jpg', alt: 'Chapra Decoration', category: 'chapra' },
-  { src: '/chap2.jpg', alt: 'Traditional Chapra Setup', category: 'chapra' },
-  { src: '/chap3.jpg', alt: 'Chapra Seating Decoration', category: 'chapra' },
-  { src: '/chap4.jpg', alt: 'Outdoor Chapra Decoration', category: 'chapra' },
-  { src: '/chap5.jpg', alt: 'Chapra Event Setup', category: 'chapra' },
-
-
-
-    
-     // ⛺ Home Ceremony
-  { src: '/home1.jpg', alt: 'Home wedding ceremony decoration', category: 'home' },
-  { src: '/home2.jpg', alt: 'Traditional home ceremony setup', category: 'home' },
-  { src: '/home3.jpg', alt: 'Home function seating decoration', category: 'home' },
-  { src: '/home4.png', alt: 'Simple home ceremony decoration design', category: 'home' },
-  { src: '/home5.png', alt: 'Home wedding event decoration', category: 'home' },
-  { src: '/home6.png', alt: 'Festive home ceremony decoration setup', category: 'home' },
-
-   
-
-
-   // 🔤 Naming Ceremony
-  { src: '/baby1.jpg', alt: 'Naming Ceremony Setup', category: 'naming' },
-  { src: '/baby2.jpg', alt: 'Traditional Naming Ceremony', category: 'naming' },
-  { src: '/baby3.png', alt: 'Naming Ceremony Stage', category: 'naming' },
-  { src: '/baby4.png', alt: 'Naming Ceremony Stage', category: 'naming' },
-  { src: '/baby5.JPG', alt: 'Naming Ceremony Stage', category: 'naming' },
-
- 
-];
-  
-
-  const filteredImages = filter === 'all' 
-    ? galleryImages 
+  const filteredImages = filter === 'all'
+    ? galleryImages
     : galleryImages.filter(img => img.category === filter);
 
   const categories = [
     { id: 'all', label: 'All' },
-    { id: 'wedding', label: 'Wedding' },
-    { id: 'board', label: 'Naming Board' },
-    { id: 'mantapa', label: 'Mantapa Decoration' },
-    { id: 'haldi', label: 'Haldi' },
-    { id: 'engagement', label: 'Engagement' },
-    { id: 'entry', label: 'Entry Decoration' },
-    { id: 'chapra', label: 'Chapra Decoration' },
-    //{ id: 'home', label: 'House Ceremony' },
     { id: 'naming', label: 'Naming Ceremony' },
-    
-    
+    { id: 'halfsaree', label: 'Halfsaree' },
+    { id: 'babyshower', label: 'Baby Shower' },
+    { id: 'platedecoration', label: 'Plate Decoration' },
+    { id: 'haldi', label: 'Haldi' },
+    { id: 'housewarming', label: 'House Warming' },
+    { id: 'engagement', label: 'Engagement' },
+    { id: 'chapra', label: 'Chapra' },
+    { id: 'rentals', label: 'Rentals' },
   ];
 
   const handlePrevious = () => {
@@ -159,11 +149,10 @@ export default function Gallery() {
                 onClick={() => setFilter(category.id)}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${
-                  filter === category.id
-                    ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg'
-                    : 'bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-500'
-                }`}
+                className={`px-6 py-2 rounded-full font-semibold transition-all duration-300 ${filter === category.id
+                  ? 'bg-gradient-to-r from-pink-500 to-purple-600 text-white shadow-lg'
+                  : 'bg-white text-slate-900 border-2 border-slate-200 hover:border-pink-500'
+                  }`}
               >
                 {category.label}
               </motion.button>

@@ -136,14 +136,14 @@ interface MapViewProps {
   longitude?: number;
 }
 
-export function MapView({ className, latitude = 13.309280, longitude = 77.140296 }: MapViewProps) {
+export function MapView({ className, latitude = 12.9783685, longitude = 77.6254476 }: MapViewProps) {
   const mapContainer = useRef<HTMLDivElement | null>(null);
   const mapInstance = useRef<LeafletMap | null>(null);
 
   useEffect(() => {
     if (!mapContainer.current || mapInstance.current) return;
 
-    // 📍 Updated Coordinates: 13.309280, 77.140296
+    // 📍 Updated Coordinates: 12.9783685, 77.6254476
     const location: [number, number] = [latitude, longitude];
 
     // Fix default marker icons
@@ -155,7 +155,7 @@ export function MapView({ className, latitude = 13.309280, longitude = 77.140296
     });
 
     mapInstance.current = L.map(mapContainer.current, {
-        scrollWheelZoom: false // Optional: prevents accidental zooming while scrolling the page
+      scrollWheelZoom: false // Optional: prevents accidental zooming while scrolling the page
     }).setView(location, 15);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -166,7 +166,7 @@ export function MapView({ className, latitude = 13.309280, longitude = 77.140296
     L.marker(location)
       .addTo(mapInstance.current)
       .bindPopup(
-        "<b>Adhishakthi Flowers</b><br/>Tumakuru, Karnataka"
+        "<b>PDM Creations</b><br/>Bengaluru, Karnataka"
       )
       .openPopup();
 
@@ -187,4 +187,4 @@ export function MapView({ className, latitude = 13.309280, longitude = 77.140296
       <div ref={mapContainer} className="w-full h-full" />
     </motion.div>
   );
-                    }
+}
