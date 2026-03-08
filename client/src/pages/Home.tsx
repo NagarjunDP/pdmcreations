@@ -534,13 +534,13 @@ function Hero() {
   // 🌟 Premium Image Collection: Chosen for high clarity and visual impact
   const backgroundImages = [
     "/name5.jpeg",
+    "hal1.jpeg",
     "/name9.jpeg",
     "/half11.jpeg",
     "/half7.jpeg",
     "/baby3.jpeg",
     "/baby9.jpeg",
     "/plate7.jpeg",
-    "/hal1.jpeg",
     "/hal5.jpeg",
     "/house1.jpeg",
     "/eng5.jpeg",
@@ -565,50 +565,46 @@ function Hero() {
     <section id="home" className="relative h-screen w-full overflow-hidden bg-slate-950 flex items-center justify-center">
 
       {/* =========================================
-          1. BACKGROUND LAYERS
+          1. BACKGROUND LAYERS - Optimized with Cross-Fade & Preloading
       ========================================= */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
-        <AnimatePresence mode='popLayout'>
+        <AnimatePresence>
           <motion.div
             key={currentImage}
-            initial={{ opacity: 0, scale: 1.1 }}
-            animate={{ opacity: 1, scale: 1.05 }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            transition={{
-              opacity: { duration: 2.5, ease: "easeInOut" },
-              scale: { duration: 8, ease: "easeOut" }
-            }}
-            className="absolute inset-0 w-full h-full"
+            transition={{ duration: 2.5, ease: "easeInOut" }}
+            className="absolute inset-0 w-full h-full overflow-hidden"
           >
-            {/* Elegant Ken Burns Effect - Slow, dreamy zoom */}
+            {/* Elegant Ken Burns Effect - Simplified for Smoothness */}
             <motion.img
               src={backgroundImages[currentImage]}
               alt="Decoration Background"
-              className="w-full h-full object-cover grayscale-[10%] brightness-[1.05]"
-              initial={{ scale: 1 }}
-              animate={{
-                scale: 1.15,
-                x: [0, 10, -10, 0],
-                y: [0, -10, 10, 0]
-              }}
+              initial={{ scale: 1.1 }}
+              animate={{ scale: 1.25 }}
               transition={{
-                scale: { duration: 15, repeat: Infinity, ease: "linear" },
-                x: { duration: 25, repeat: Infinity, ease: "easeInOut" },
-                y: { duration: 20, repeat: Infinity, ease: "easeInOut" }
+                duration: 15,
+                ease: "linear",
+                repeat: Infinity,
+                repeatType: "reverse"
               }}
+              className="w-full h-full object-cover brightness-[1.1] transform-gpu"
+              loading="eager"
             />
           </motion.div>
         </AnimatePresence>
 
-        {/* HIGH CLARITY OVERLAYS */}
-        {/* Soft Vignetee - Focuses eye on content while keeping images clear */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-10" />
+        {/* IMAGE PRELOADING - Hidden but forced to load */}
+        <div className="hidden" aria-hidden="true">
+          {backgroundImages.map((src, i) => (
+            <img key={i} src={src} alt="preload" />
+          ))}
+        </div>
 
-        {/* Subtle Glass Tint */}
-        <div className="absolute inset-0 backdrop-blur-[1px] bg-white/[0.02] z-10" />
-
-        {/* Brand Glow */}
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-900/10 via-transparent to-pink-900/10 mix-blend-overlay z-10" />
+        {/* PREMIUM GRADIENT OVERLAYS */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/20 to-black/70 z-10" />
+        <div className="absolute inset-0 bg-slate-950/20 mix-blend-multiply z-10" />
       </motion.div>
 
 
