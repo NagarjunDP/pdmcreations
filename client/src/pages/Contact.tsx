@@ -223,12 +223,17 @@ Sent from PDM Creations Website
                   className="w-full px-4 py-3 border-2 border-slate-300 rounded-lg focus:outline-none focus:border-pink-500 transition-colors duration-300"
                 >
                   <option value="">Select event type</option>
-                  <option value="naming">Naming ceremony</option>
-                  <option value="halfsaree">Halfsaree</option>
-                  <option value="plate">Plate decoration</option>
-                  <option value="haldi">Haldi</option>
-                  <option value="housewarming">House warming</option>
+                  <option value="wedding">Wedding</option>
+                  <option value="engagement">Engagement</option>
+                  <option value="naming">Naming Ceremony</option>
+                  <option value="half">Halfsaree</option>
+                  <option value="haldi">Haldi, Bangle Ceremony</option>
+                  <option value="house">House Warming</option>
                   <option value="chapra">Chapra</option>
+                  <option value="birthday">Birthday Party</option>
+                  <option value="corporate">Corporate Events</option>
+                  <option value="catering">Catering Services</option>
+                  <option value="dance">DJ, Chenda Melam Dance Team</option>
                   <option value="rentals">Rentals</option>
                   <option value="other">other</option>
                 </select>
