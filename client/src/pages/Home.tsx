@@ -65,7 +65,7 @@ const services = [
     title: 'Baby Shower',
     icon: 'Baby',
     description: 'Beautiful decor for welcoming your little one',
-    image: '/baby1.jpeg',
+    image: '/baby9.jpeg',
   },
   {
     id: 'platedecoration',
@@ -154,7 +154,7 @@ const SERVICES = [
   },
   {
     icon: Baby,
-    img: "/baby3.jpeg", // Needs appropriate image
+    img: "/baby9.jpeg", // Needs appropriate image
     title: "Baby Shower",
     subtitle: "Beautiful decor for welcoming your little one",
     highlights: ["Baby Shower Themes", "Floral Arches", "Custom Backdrops", "Photo Booth"],
@@ -162,7 +162,7 @@ const SERVICES = [
   },
   {
     icon: Gem,
-    img: "/baby6.jpeg", // Needs appropriate image
+    img: "/pd1.HEIC", // Needs appropriate image
     title: "Plate Decoration",
     subtitle: "Creative plate decor for special ceremonies",
     highlights: ["Engagement Plates", "Aarti Thali", "Bridal Trousseau", "Gift Packing"],
