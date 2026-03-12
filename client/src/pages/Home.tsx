@@ -51,7 +51,7 @@ const services = [
     title: 'Naming Ceremony',
     icon: 'Baby',
     description: 'Celebrate new beginnings with elegance',
-    image: '/name1.jpeg',
+    image: '/nc1.jpeg',
   },
   {
     id: 'halfsaree',
@@ -129,8 +129,16 @@ const BUSINESS_NAME = "PDM Creations";
 
 const SERVICES = [
   {
+    icon: Sparkles,
+    img: "/en1.jpeg",
+    title: "Wedding",
+    subtitle: "Floral artistry, Traditional, drapes & themes",
+    highlights: ["Stage setups", "Mandaps", "Traditional", "Theme decor"],
+    rating: 5
+  },
+  {
     icon: Camera,
-    img: "/name1.jpeg",
+    img: "/nc1.jpeg",
     title: "Naming Ceremony",
     subtitle: "Birthdays, anniversaries & custom themes",
     highlights: ["Kids themes", "Naming Ceremony", "Custom props", "Entertainment"],
