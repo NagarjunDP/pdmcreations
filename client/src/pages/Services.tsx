@@ -78,7 +78,7 @@ export default function Services() {
           items: ['All Standard features', 'Neon light board', 'Sound system', 'Catering', 'Coordination support'],
         },
       ],
-      gallery: ['/name1.jpeg', '/name2.jpeg', '/name3.jpeg', '/name4.jpeg', '/name5.jpeg', '/name6.jpeg', '/name7.jpeg', '/name8.jpeg', '/name9.jpeg', '/name10.jpeg'],
+      gallery: ['/nc1.jpeg','nc2.jpeg','nc3.jpeg','/nc4.jpeg'],
     },
 
     // 2️⃣ Halfsaree
