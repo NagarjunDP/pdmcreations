@@ -534,7 +534,10 @@ function Hero() {
   // 🌟 Premium Image Collection: Chosen for high clarity and visual impact
   const backgroundImages = [
     "/name5.jpeg",
-    "hal1.jpeg",
+    "/hal1.jpeg",
+    "/bg1.JPG",
+    "/bg2.HEIC",
+    "/bg3.HEIC",
     "/name9.jpeg",
     "/half11.jpeg",
     "/half7.jpeg",
