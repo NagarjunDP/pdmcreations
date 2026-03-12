@@ -116,7 +116,7 @@ export default function Services() {
       color: 'from-pink-500 to-rose-400',
       lightColor: 'from-pink-50 to-rose-50',
       description: 'Beautiful decor for welcoming your little one',
-      image: '/baby3.jpeg',
+      image: '/baby9.jpeg',
       highlights: ['Baby Shower Themes', 'Floral Arches', 'Custom Backdrops', 'Photo Booth'],
       packages: [
         {
