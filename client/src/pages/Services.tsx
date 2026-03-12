@@ -225,7 +225,7 @@ export default function Services() {
       color: 'from-indigo-600 to-purple-600',
       lightColor: 'from-indigo-50 to-purple-50',
       description: 'Beautiful setups for a perfect engagement',
-      image: '/eng5.jpeg',
+      image: '/en4.jpeg',
       highlights: ['Stage Décor', 'Ring Ceremony', 'Floral Backdrops', 'Photography'],
       packages: [
         {
@@ -241,7 +241,7 @@ export default function Services() {
           items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'],
         },
       ],
-      gallery: ['en1.jpeg','en2.jpeg','en3.jpeg','en4.jpeg','/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg'],
+      gallery: ['en1.jpeg','en2.jpeg','en3.jpeg','eng5.jpeg','/eng2.jpeg', '/eng3.jpeg'],
     },
 
     // 8️⃣ Chapra
