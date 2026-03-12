@@ -45,6 +45,12 @@ export default function Gallery() {
     { src: '/baby10.jpeg', alt: 'Baby Shower Event', category: 'babyshower' },
 
     // ✨ Plate Decoration
+    { src: '/pd2.JPG', alt: 'Premium Plate Decoration Design', category: 'platedecoration' },
+{ src: '/pd3.HEIC', alt: 'Premium Plate Decoration Setup', category: 'platedecoration' },
+{ src: '/pd4.HEIC', alt: 'Elegant Premium Plate Decoration', category: 'platedecoration' },
+{ src: '/pd5.HEIC', alt: 'Luxury Premium Plate Decoration', category: 'platedecoration' },
+{ src: '/pd6.HEIC', alt: 'Wedding Premium Plate Decoration', category: 'platedecoration' },
+{ src: '/pd8.HEIC', alt: 'Premium Plate Decoration Styling', category: 'platedecoration' },
     { src: '/plate7.jpeg', alt: 'Creative Plate Decoration', category: 'platedecoration' },
     { src: '/plate2.jpeg', alt: 'Engagement Plate Display', category: 'platedecoration' },
     { src: '/plate3.jpeg', alt: 'Aarti Thali Setup', category: 'platedecoration' },
