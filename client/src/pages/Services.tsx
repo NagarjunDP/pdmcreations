@@ -118,7 +118,7 @@ export default function Services() {
       color: 'from-purple-600 to-fuchsia-600',
       lightColor: 'from-purple-50 to-fuchsia-50',
       description: 'Creative plate decor for special ceremonies',
-      image: '/baby6.jpeg',
+      image: '/pd1.HEIC',
       highlights: ['Engagement Plates', 'Aarti Thali', 'Bridal Trousseau', 'Gift Packing'],
       packages: [
         {
@@ -134,7 +134,7 @@ export default function Services() {
           items: ['Luxury trousseau packing', 'Exotic flower accents', 'Custom personalized tags', 'LED integrated displays'],
         },
       ],
-      gallery: ['/baby1.jpeg', '/baby2.jpeg', '/baby3.jpeg', '/baby4.jpeg', '/baby5.jpeg', '/baby7.jpeg'],
+      gallery: ['/pd2.JPG', '/pd3.HEIC', '/pd4.HEIC', '/pd5.HEIC', '/pd6.HEIC', '/pd8.HEIC'],
     },
 
     // 5️⃣ Haldi
