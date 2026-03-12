@@ -190,6 +190,31 @@ export default function Services() {
       ],
       gallery: ['/house1.jpeg', '/house2.jpeg', '/house3.jpeg', '/house4.jpeg', '/house5.jpeg', '/house6.jpeg', '/house7.jpeg'],
     },
+    {
+  id: 'wedding',
+  title: 'Wedding Decoration',
+  icon: '👰',
+  color: 'from-rose-600 to-pink-600',
+  lightColor: 'from-rose-50 to-pink-50',
+  description: 'Elegant wedding decorations to make your special day unforgettable',
+  image: '/en1.jpeg',
+  highlights: ['Mandap Décor', 'Floral Arrangements', 'Grand Entrance', 'Lighting & Ambience'],
+  packages: [
+    {
+      name: 'Basic Wedding',
+      items: ['Simple mandap setup', 'Basic floral decoration', 'Stage seating arrangement'],
+    },
+    {
+      name: 'Standard Wedding',
+      items: ['All Basic features', 'Theme-based mandap décor', 'Entrance decoration', 'Lighting setup'],
+    },
+    {
+      name: 'Premium Wedding',
+      items: ['All Standard features', 'Luxury mandap design', 'Premium floral arrangements', 'LED lighting effects', 'Complete event management'],
+    },
+  ],
+  gallery: ['/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg','en1.jpeg','en2.jpeg','en3.jpeg','en4.jpeg'],
+},
 
     // 7️⃣ Engagement
     {
@@ -215,7 +240,7 @@ export default function Services() {
           items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'],
         },
       ],
-      gallery: ['/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg'],
+      gallery: ['en1.jpeg','en2.jpeg','en3.jpeg','en4.jpeg','/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg'],
     },
 
     // 8️⃣ Chapra
