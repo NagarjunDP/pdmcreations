@@ -132,7 +132,7 @@ export default function Services() {
           items: ['All Standard features', 'Custom theme design', 'Premium florals', 'Full room transformation'],
         },
       ],
-      gallery: ['/baby4.jpeg', '/baby5.jpeg', '/baby6.jpeg', '/baby7.jpeg', '/baby8.jpeg', '/baby9.jpeg'],
+      gallery: ['/baby4.jpeg', '/baby5.jpeg', '/baby6.jpeg', '/baby7.jpeg', '/baby8.jpeg', '/baby3.jpeg'],
     },
 
     // 4️⃣ Plate Decoration
