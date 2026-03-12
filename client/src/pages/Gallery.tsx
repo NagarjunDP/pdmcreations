@@ -8,16 +8,16 @@ export default function Gallery() {
 
   const galleryImages = [
     // 🔤 Naming Ceremony
-    { src: '/name1.jpeg', alt: 'Naming Ceremony Setup', category: 'naming' },
-    { src: '/name2.jpeg', alt: 'Traditional Naming Ceremony', category: 'naming' },
-    { src: '/name3.jpeg', alt: 'Naming Ceremony Stage', category: 'naming' },
-    { src: '/name4.jpeg', alt: 'Naming Ceremony Decoration', category: 'naming' },
-    { src: '/name5.jpeg', alt: 'Naming Welcome Board', category: 'naming' },
-    { src: '/name6.jpeg', alt: 'Naming Event Decoration', category: 'naming' },
-    { src: '/name7.jpeg', alt: 'Naming Ceremony Backdrop', category: 'naming' },
-    { src: '/name8.jpeg', alt: 'Naming Setup', category: 'naming' },
-    { src: '/name9.jpeg', alt: 'Naming Floral Design', category: 'naming' },
-    { src: '/name10.jpeg', alt: 'Naming Theme', category: 'naming' },
+    { src: '/nc1.jpeg', alt: 'Naming Ceremony Setup', category: 'naming' },
+    { src: '/nc2.jpeg', alt: 'Traditional Naming Ceremony', category: 'naming' },
+    { src: '/nc3.jpeg', alt: 'Naming Ceremony Stage', category: 'naming' },
+    { src: '/nc4.jpeg', alt: 'Naming Ceremony Decoration', category: 'naming' },
+    { src: '/name3.jpeg', alt: 'Naming Welcome Board', category: 'naming' },
+    // { src: '/name6.jpeg', alt: 'Naming Event Decoration', category: 'naming' },
+    // { src: '/name7.jpeg', alt: 'Naming Ceremony Backdrop', category: 'naming' },
+    // { src: '/name8.jpeg', alt: 'Naming Setup', category: 'naming' },
+    // { src: '/name9.jpeg', alt: 'Naming Floral Design', category: 'naming' },
+    // { src: '/name10.jpeg', alt: 'Naming Theme', category: 'naming' },
 
     // 🎀 Halfsaree
     { src: '/half1.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
