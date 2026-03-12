@@ -40,6 +40,13 @@ interface Service {
 
 const services = [
   {
+    id: 'wedding',
+    title: 'Wedding',
+    icon: 'Sparkles',
+    description: 'Beautiful decor for your Wedding stage',
+    image: '/en1.jpeg',
+  },
+  {
     id: 'naming',
     title: 'Naming Ceremony',
     icon: 'Baby',
