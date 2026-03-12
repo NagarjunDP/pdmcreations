@@ -113,7 +113,7 @@ export default function Services() {
     // 4️⃣ Plate Decoration
     {
       id: 'platedecoration',
-      title: 'Plate Decoration',
+      title: 'Premium Plate Decoration',
       icon: '✨',
       color: 'from-purple-600 to-fuchsia-600',
       lightColor: 'from-purple-50 to-fuchsia-50',
