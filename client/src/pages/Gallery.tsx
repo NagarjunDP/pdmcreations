@@ -8,6 +8,46 @@ export default function Gallery() {
 
   const galleryImages = [
     // 🔤 Naming Ceremony
+    //wedding
+    { src: '/WhatsApp Image 2026-03-12 at 18.33.56 (1).jpeg', alt: 'Wedding Stage Decoration', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.56.jpeg', alt: 'Wedding Floral Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.26 (3).jpeg', alt: 'Wedding Mandap Design', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.28 (4).jpeg', alt: 'Wedding Premium Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.29 (3).jpeg', alt: 'Wedding Backdrop Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.27 (3).jpeg', alt: 'Wedding Elegant Theme', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.31 (3).jpeg', alt: 'Wedding Grand Stage', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.30 (1).jpeg', alt: 'Wedding Designer Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.26 (2).jpeg', alt: 'Wedding Floral Decoration', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.25 (3).jpeg', alt: 'Wedding Event Setup', category: 'wedding' },
+
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.27 (2).jpeg', alt: 'Wedding Luxury Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.28 (3).jpeg', alt: 'Wedding Stage Theme', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.25 (2).jpeg', alt: 'Wedding Classic Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.31 (2).jpeg', alt: 'Wedding Ceremony Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.29 (2).jpeg', alt: 'Wedding Floral Backdrop', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.28 (2).jpeg', alt: 'Wedding Modern Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.26 (1).jpeg', alt: 'Wedding Mandap Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.33 (1).jpeg', alt: 'Wedding Premium Stage', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.32 (3).jpeg', alt: 'Wedding Elegant Decoration', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.27 (1).jpeg', alt: 'Wedding Stylish Setup', category: 'wedding' },
+
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.33.jpeg', alt: 'Wedding Grand Decoration', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.29 (1).jpeg', alt: 'Wedding Event Styling', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.25.jpeg', alt: 'Wedding Theme Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.32 (2).jpeg', alt: 'Wedding Floral Theme', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.30.jpeg', alt: 'Wedding Designer Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.32 (1).jpeg', alt: 'Wedding Premium Theme', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.32.jpeg', alt: 'Wedding Celebration Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.26.jpeg', alt: 'Wedding Elegant Backdrop', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.28 (1).jpeg', alt: 'Wedding Luxury Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.29.jpeg', alt: 'Wedding Stage Design', category: 'wedding' },
+
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.28.jpeg', alt: 'Wedding Event Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.31 (1).jpeg', alt: 'Wedding Classic Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.31.jpeg', alt: 'Wedding Grand Theme', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.27.jpeg', alt: 'Wedding Floral Setup', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.25 (1).jpeg', alt: 'Wedding Stylish Decor', category: 'wedding' },
+{ src: '/WhatsApp Image 2026-03-12 at 18.33.24.jpeg', alt: 'Wedding Decoration Design', category: 'wedding' },
     { src: '/nc1.jpeg', alt: 'Naming Ceremony Setup', category: 'naming' },
     { src: '/nc2.jpeg', alt: 'Traditional Naming Ceremony', category: 'naming' },
     { src: '/nc3.jpeg', alt: 'Naming Ceremony Stage', category: 'naming' },
@@ -152,6 +192,7 @@ export default function Gallery() {
 
   const categories = [
     { id: 'all', label: 'All' },
+    {id: 'wedding', label:"Wedding"},
     { id: 'naming', label: 'Naming Ceremony' },
     { id: 'halfsaree', label: 'Halfsaree' },
     { id: 'babyshower', label: 'Baby Shower' },
