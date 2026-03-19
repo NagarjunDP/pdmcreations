@@ -62,7 +62,7 @@ export default function Gallery() {
 { src: 'WhatsApp Image 2026-03-18 at 22.02.07.jpeg', alt: 'Modern Naming Ceremony Decor', category: 'naming' },
 { src: 'WhatsApp Image 2026-03-18 at 22.02.06.jpeg', alt: 'Premium Naming Ceremony Stage', category: 'naming' },
 { src: 'WhatsApp Image 2026-03-18 at 20.34.34 (1).jpeg', alt: 'Stylish Naming Ceremony Decoration', category: 'naming' },
-{ src: 'WhatsApp Image 2026-03-18 at 20.34.33 (1).jpeg', alt: 'Luxury Naming Ceremony Setup', category: 'naming' }
+{ src: 'WhatsApp Image 2026-03-18 at 20.34.33 (1).jpeg', alt: 'Luxury Naming Ceremony Setup', category: 'naming' },
     { src: '/nc1.jpeg', alt: 'Naming Ceremony Setup', category: 'naming' },
     { src: '/nc2.jpeg', alt: 'Traditional Naming Ceremony', category: 'naming' },
     { src: '/nc3.jpeg', alt: 'Naming Ceremony Stage', category: 'naming' },
