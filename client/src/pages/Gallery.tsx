@@ -207,6 +207,28 @@ export default function Gallery() {
     { src: '/house7.jpeg', alt: 'House Warming Exterior', category: 'housewarming' },
 
     // 💍 Engagement
+  
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.31.jpeg', alt: 'Engagement Stage Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.29.jpeg', alt: 'Engagement Floral Decor', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.58.23.jpeg', alt: 'Engagement Couple Stage', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.40.jpeg', alt: 'Engagement Premium Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.27 (2).jpeg', alt: 'Engagement Backdrop Design', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.30 (1).jpeg', alt: 'Engagement Ring Ceremony Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.27 (1).jpeg', alt: 'Engagement Elegant Decor', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.27.jpeg', alt: 'Engagement Traditional Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.31 (3).jpeg', alt: 'Engagement Grand Stage', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.28.jpeg', alt: 'Engagement Lighting Decor', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.29 (2).jpeg', alt: 'Engagement Floral Backdrop', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.30.jpeg', alt: 'Engagement Modern Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.26.jpeg', alt: 'Engagement Simple Decor', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.31 (1).jpeg', alt: 'Engagement Couple Entry Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.24.jpeg', alt: 'Engagement Stage Decoration', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.29 (1).jpeg', alt: 'Engagement Theme Decor', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.26 (1).jpeg', alt: 'Engagement Floral Entry', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.29 (3).jpeg', alt: 'Engagement Luxury Setup', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.31 (2).jpeg', alt: 'Engagement Designer Backdrop', category: 'engagement' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.53.23.jpeg', alt: 'Engagement Event Decor', category: 'engagement' },
+
     { src: '/eng5.jpeg', alt: 'Engagement Stage Setup', category: 'engagement' },
     { src: '/eng2.jpeg', alt: 'Engagement Floral Backdrop', category: 'engagement' },
     { src: '/eng3.jpeg', alt: 'Ring Ceremony Setup', category: 'engagement' },
