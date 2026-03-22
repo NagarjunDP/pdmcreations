@@ -75,7 +75,7 @@ export default function Gallery() {
     // { src: '/name10.jpeg', alt: 'Naming Theme', category: 'naming' },
 
     // 🎀 Halfsaree
-    [
+    
   { src: '/WhatsApp Image 2026-03-22 at 01.46.41 (1).jpeg', alt: 'Halfsaree Traditional Decor', category: 'halfsaree' },
   { src: '/WhatsApp Image 2026-03-22 at 01.46.41.jpeg', alt: 'Halfsaree Floral Setup', category: 'halfsaree' },
   { src: '/WhatsApp Image 2026-03-22 at 01.46.34.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
@@ -93,7 +93,7 @@ export default function Gallery() {
   { src: '/WhatsApp Image 2026-03-22 at 01.38.36 (1).jpeg', alt: 'Halfsaree Theme Decoration', category: 'halfsaree' },
   { src: '/WhatsApp Image 2026-03-22 at 01.38.37.jpeg', alt: 'Halfsaree Festive Decor', category: 'halfsaree' },
   { src: '/WhatsApp Image 2026-03-22 at 01.38.36.jpeg', alt: 'Halfsaree Cultural Setup', category: 'halfsaree' },
-]
+
     { src: '/half1.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
     { src: '/half2.jpeg', alt: 'Traditional Halfsaree Setup', category: 'halfsaree' },
     { src: '/half3.jpeg', alt: 'Halfsaree Floral Decor', category: 'halfsaree' },
