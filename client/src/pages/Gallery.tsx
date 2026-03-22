@@ -75,6 +75,25 @@ export default function Gallery() {
     // { src: '/name10.jpeg', alt: 'Naming Theme', category: 'naming' },
 
     // 🎀 Halfsaree
+    [
+  { src: '/WhatsApp Image 2026-03-22 at 01.46.41 (1).jpeg', alt: 'Halfsaree Traditional Decor', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.46.41.jpeg', alt: 'Halfsaree Floral Setup', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.46.34.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.46.40 (1).jpeg', alt: 'Halfsaree Event Design', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.46.40.jpeg', alt: 'Halfsaree Backdrop Setup', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.39.17.jpeg', alt: 'Halfsaree Ceremony Decor', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.37 (3).jpeg', alt: 'Halfsaree Floral Entrance', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.37 (2).jpeg', alt: 'Halfsaree Elegant Setup', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.35 (1).jpeg', alt: 'Halfsaree Traditional Theme', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.38.jpeg', alt: 'Halfsaree Mandap Decor', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.35.jpeg', alt: 'Halfsaree Stage Lighting', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.39.jpeg', alt: 'Halfsaree Premium Decor', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.36 (2).jpeg', alt: 'Halfsaree Floral Arrangement', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.37 (1).jpeg', alt: 'Halfsaree Grand Setup', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.36 (1).jpeg', alt: 'Halfsaree Theme Decoration', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.37.jpeg', alt: 'Halfsaree Festive Decor', category: 'halfsaree' },
+  { src: '/WhatsApp Image 2026-03-22 at 01.38.36.jpeg', alt: 'Halfsaree Cultural Setup', category: 'halfsaree' },
+]
     { src: '/half1.jpeg', alt: 'Halfsaree Stage Decoration', category: 'halfsaree' },
     { src: '/half2.jpeg', alt: 'Traditional Halfsaree Setup', category: 'halfsaree' },
     { src: '/half3.jpeg', alt: 'Halfsaree Floral Decor', category: 'halfsaree' },
