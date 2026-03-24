@@ -1091,7 +1091,7 @@ function CTA() {
             <Phone className="w-5 h-5" /> Call {PHONE_NUMBER}
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="px-10 py-4 bg-white/10 backdrop-blur-md border border-white/20 text-white font-bold rounded-full shadow-xl hover:shadow-2xl hover:scale-105 transition-all"
           >
             Get Free Quote
