@@ -283,6 +283,16 @@ export default function Gallery() {
 
     // 📦 Rentals
     { src: '/rent1.jpeg', alt: 'Event Seating Rentals', category: 'rentals' },
+    { src: '/rent1.jpeg', alt: 'Event Seating Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.17 (1).jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.17 (2).jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.17.jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.18 (1).jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.18 (2).jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.18.jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.19 (1).jpeg', alt: 'Event Rentals', category: 'rentals' },
+    { src: '/WhatsApp Image 2026-05-08 at 14.22.19.jpeg', alt: 'Event Rentals', category: 'rentals' },
+    
   ];
 
 
