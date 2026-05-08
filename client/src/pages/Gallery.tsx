@@ -282,8 +282,7 @@ export default function Gallery() {
     { src: '/chapra1.jpeg', alt: 'Chapra Decoration', category: 'chapra' },
 
     // 📦 Rentals
-    { src: '/rent1.jpeg', alt: 'Event Seating Rentals', category: 'rentals' },
-    { src: '/rent1.jpeg', alt: 'Event Seating Rentals', category: 'rentals' },
+    { src: '/rent1.jpeg', alt: 'Event Rentals', category: 'rentals' },
     { src: '/WhatsApp Image 2026-05-08 at 14.22.17 (1).jpeg', alt: 'Event Rentals', category: 'rentals' },
     { src: '/WhatsApp Image 2026-05-08 at 14.22.17 (2).jpeg', alt: 'Event Rentals', category: 'rentals' },
     { src: '/WhatsApp Image 2026-05-08 at 14.22.17.jpeg', alt: 'Event Rentals', category: 'rentals' },
