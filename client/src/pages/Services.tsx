@@ -30,31 +30,31 @@ export default function Services() {
 
   const services: ServicePackage[] = [
     {
-  id: 'wedding',
-  title: 'Wedding Decoration',
-  icon: '👰',
-  color: 'from-rose-600 to-pink-600',
-  lightColor: 'from-rose-50 to-pink-50',
-  description: 'Elegant wedding decorations to make your special day unforgettable',
-  image: '/en1.jpeg',
-  highlights: ['Mandap Décor', 'Floral Arrangements', 'Grand Entrance', 'Lighting & Ambience'],
-  packages: [
-    {
-      name: 'Basic Wedding',
-      items: ['Simple mandap setup', 'Basic floral decoration', 'Stage seating arrangement'],
+      id: 'wedding',
+      title: 'Wedding Decoration',
+      icon: '👰',
+      color: 'from-rose-600 to-pink-600',
+      lightColor: 'from-rose-50 to-pink-50',
+      description: 'Elegant wedding decorations to make your special day unforgettable',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en1.jpeg',
+      highlights: ['Mandap Décor', 'Floral Arrangements', 'Grand Entrance', 'Lighting & Ambience'],
+      packages: [
+        { name: 'Basic Wedding', items: ['Simple mandap setup', 'Basic floral decoration', 'Stage seating arrangement'] },
+        { name: 'Standard Wedding', items: ['All Basic features', 'Theme-based mandap décor', 'Entrance decoration', 'Lighting setup'] },
+        { name: 'Premium Wedding', items: ['All Standard features', 'Luxury mandap design', 'Premium floral arrangements', 'LED lighting effects', 'Complete event management'] },
+      ],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en4.jpeg'
+      ],
     },
-    {
-      name: 'Standard Wedding',
-      items: ['All Basic features', 'Theme-based mandap décor', 'Entrance decoration', 'Lighting setup'],
-    },
-    {
-      name: 'Premium Wedding',
-      items: ['All Standard features', 'Luxury mandap design', 'Premium floral arrangements', 'LED lighting effects', 'Complete event management'],
-    },
-  ],
-  gallery: ['/eng2.jpeg', '/eng3.jpeg', '/eng5.jpeg','en1.jpeg','en2.jpeg','en3.jpeg','en4.jpeg'],
-},
-    // 1️⃣ Naming Ceremony
+
+    // Naming Ceremony
     {
       id: 'naming',
       title: 'Naming Ceremony',
@@ -62,26 +62,22 @@ export default function Services() {
       color: 'from-blue-600 to-cyan-600',
       lightColor: 'from-blue-50 to-cyan-50',
       description: 'Celebrate new beginnings with elegance',
-      image: '/name3.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/name3.jpeg',
       highlights: ['Stage Setup', 'Custom Props', 'Photography', 'Entertainment'],
       packages: [
-        {
-          name: 'Basic Naming',
-          items: ['Stage decoration', 'Theme backdrop', 'Balloon decoration', 'Welcome board', 'Entrance decoration'],
-        },
-        {
-          name: 'Standard Naming',
-          items: ['All Basic features', 'Garlands', 'Mallige dindu', 'LED name display', 'Photo booth', 'Photography & Videography'],
-        },
-        {
-          name: 'Premium Naming',
-          items: ['All Standard features', 'Neon light board', 'Sound system', 'Catering', 'Coordination support'],
-        },
+        { name: 'Basic Naming', items: ['Stage decoration', 'Theme backdrop', 'Balloon decoration', 'Welcome board', 'Entrance decoration'] },
+        { name: 'Standard Naming', items: ['All Basic features', 'Garlands', 'Mallige dindu', 'LED name display', 'Photo booth', 'Photography & Videography'] },
+        { name: 'Premium Naming', items: ['All Standard features', 'Neon light board', 'Sound system', 'Catering', 'Coordination support'] },
       ],
-      gallery: ['/nc1.jpeg','nc2.jpeg','nc3.jpeg','/nc4.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/nc1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/nc2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/nc3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/nc4.jpeg'
+      ],
     },
 
-    // 2️⃣ Halfsaree
+    // Halfsaree
     {
       id: 'halfsaree',
       title: 'Halfsaree',
@@ -89,26 +85,29 @@ export default function Services() {
       color: 'from-rose-600 to-pink-600',
       lightColor: 'from-rose-50 to-pink-50',
       description: 'Traditional decor for halfsaree functions',
-      image: '/half11.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half11.jpeg',
       highlights: ['Traditional Themes', 'Floral Designs', 'Stage Decoration', 'Lighting'],
       packages: [
-        {
-          name: 'Basic Halfsaree',
-          items: ['Simple stage backdrop', 'Flower decoration', 'Seating setup'],
-        },
-        {
-          name: 'Standard Halfsaree',
-          items: ['All Basic features', 'Theme-based décor', 'Entrance arrangement', 'Lighting'],
-        },
-        {
-          name: 'Premium Halfsaree',
-          items: ['All Standard features', 'Grand floral stage', 'Photo booth', 'Complete event management'],
-        },
+        { name: 'Basic Halfsaree', items: ['Simple stage backdrop', 'Flower decoration', 'Seating setup'] },
+        { name: 'Standard Halfsaree', items: ['All Basic features', 'Theme-based décor', 'Entrance arrangement', 'Lighting'] },
+        { name: 'Premium Halfsaree', items: ['All Standard features', 'Grand floral stage', 'Photo booth', 'Complete event management'] },
       ],
-      gallery: ['/half1.jpeg', '/half2.jpeg', '/half3.jpeg', '/half4.jpeg', '/half5.jpeg', '/half6.jpeg', '/half7.jpeg', '/half8.jpeg', '/half9.jpeg', '/half10.jpeg', '/half11.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half4.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half6.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half7.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half8.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half9.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half10.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half11.jpeg'
+      ],
     },
 
-    // 3️⃣ Baby Shower
+    // Baby Shower
     {
       id: 'babyshower',
       title: 'Baby Shower',
@@ -116,26 +115,24 @@ export default function Services() {
       color: 'from-pink-500 to-rose-400',
       lightColor: 'from-pink-50 to-rose-50',
       description: 'Beautiful decor for welcoming your little one',
-      image: '/baby9.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby9.jpeg',
       highlights: ['Baby Shower Themes', 'Floral Arches', 'Custom Backdrops', 'Photo Booth'],
       packages: [
-        {
-          name: 'Basic Baby Shower',
-          items: ['Backdrop decoration', 'Balloon arch', 'Welcome board'],
-        },
-        {
-          name: 'Standard Baby Shower',
-          items: ['All Basic features', 'Floral additions', 'Prop setup', 'Seating decoration'],
-        },
-        {
-          name: 'Premium Baby Shower',
-          items: ['All Standard features', 'Custom theme design', 'Premium florals', 'Full room transformation'],
-        },
+        { name: 'Basic Baby Shower', items: ['Backdrop decoration', 'Balloon arch', 'Welcome board'] },
+        { name: 'Standard Baby Shower', items: ['All Basic features', 'Floral additions', 'Prop setup', 'Seating decoration'] },
+        { name: 'Premium Baby Shower', items: ['All Standard features', 'Custom theme design', 'Premium florals', 'Full room transformation'] },
       ],
-      gallery: ['/baby4.jpeg', '/baby5.jpeg', '/baby6.jpeg', '/baby7.jpeg', '/baby8.jpeg', '/baby3.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby4.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby6.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby7.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby8.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/baby3.jpeg'
+      ],
     },
 
-    // 4️⃣ Plate Decoration
+    // Plate Decoration
     {
       id: 'platedecoration',
       title: 'Premium Plate Decoration',
@@ -143,26 +140,24 @@ export default function Services() {
       color: 'from-purple-600 to-fuchsia-600',
       lightColor: 'from-purple-50 to-fuchsia-50',
       description: 'Creative plate decor for special ceremonies',
-      image: '/pd1.HEIC',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd1.HEIC',
       highlights: ['Engagement Plates', 'Aarti Thali', 'Bridal Trousseau', 'Gift Packing'],
       packages: [
-        {
-          name: 'Basic Plates',
-          items: ['Standard decoration design', 'Floral borders', 'Basic wrapping'],
-        },
-        {
-          name: 'Standard Plates',
-          items: ['Custom themed plates', 'Premium ribbons & nets', 'Acrylic bases'],
-        },
-        {
-          name: 'Premium Plates',
-          items: ['Luxury trousseau packing', 'Exotic flower accents', 'Custom personalized tags', 'LED integrated displays'],
-        },
+        { name: 'Basic Plates', items: ['Standard decoration design', 'Floral borders', 'Basic wrapping'] },
+        { name: 'Standard Plates', items: ['Custom themed plates', 'Premium ribbons & nets', 'Acrylic bases'] },
+        { name: 'Premium Plates', items: ['Luxury trousseau packing', 'Exotic flower accents', 'Custom personalized tags', 'LED integrated displays'] },
       ],
-      gallery: ['/pd2.JPG', '/pd3.HEIC', '/pd4.HEIC', '/pd5.HEIC', '/pd6.HEIC', '/pd8.HEIC'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd2.JPG',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd3.HEIC',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd4.HEIC',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd5.HEIC',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd6.HEIC',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/pd8.HEIC'
+      ],
     },
 
-    // 5️⃣ Haldi
+    // Haldi
     {
       id: 'haldi',
       title: 'Haldi Decoration',
@@ -170,26 +165,24 @@ export default function Services() {
       color: 'from-yellow-600 to-orange-500',
       lightColor: 'from-yellow-50 to-orange-50',
       description: 'Vibrant and joyful haldi celebrations',
-      image: '/hal1.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal1.jpeg',
       highlights: ['Marigold Setup', 'Traditional Décor', 'Seating Setup', 'Photography'],
       packages: [
-        {
-          name: 'Basic Haldi',
-          items: ['Backdrop decoration', 'Marigold strings', 'Floor seating', 'Basic props'],
-        },
-        {
-          name: 'Standard Haldi',
-          items: ['All Basic features', 'Floral backdrop', 'Brass props', 'Chair decoration', 'Photo corner'],
-        },
-        {
-          name: 'Premium Haldi',
-          items: ['All Standard features', 'Stage setup', 'Custom floral design', 'Lighting', 'Event coordination'],
-        },
+        { name: 'Basic Haldi', items: ['Backdrop decoration', 'Marigold strings', 'Floor seating', 'Basic props'] },
+        { name: 'Standard Haldi', items: ['All Basic features', 'Floral backdrop', 'Brass props', 'Chair decoration', 'Photo corner'] },
+        { name: 'Premium Haldi', items: ['All Standard features', 'Stage setup', 'Custom floral design', 'Lighting', 'Event coordination'] },
       ],
-      gallery: ['/hal1.jpeg', '/hal2.jpeg', '/hal3.jpeg', '/hal4.jpeg', '/hal5.jpeg', '/hal6.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal4.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal6.jpeg'
+      ],
     },
 
-    // 6️⃣ House Warming
+    // House Warming
     {
       id: 'housewarming',
       title: 'House Warming',
@@ -197,27 +190,25 @@ export default function Services() {
       color: 'from-emerald-600 to-teal-500',
       lightColor: 'from-emerald-50 to-teal-50',
       description: 'Elegant setups for your new home',
-      image: '/house1.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house1.jpeg',
       highlights: ['Entrance arches', 'Puja room decor', 'Wall drapes', 'Staircase florals'],
       packages: [
-        {
-          name: 'Basic House Warming',
-          items: ['Main door floral arch', 'Mango leaf torans', 'Basic puja room decor'],
-        },
-        {
-          name: 'Standard House Warming',
-          items: ['All Basic features', 'Staircase flower rangoli', 'Living room drapes', 'Balcony decoration'],
-        },
-        {
-          name: 'Premium House Warming',
-          items: ['All Standard features', 'Full exterior floral highlights', 'Exotic flowers setup', 'Complete interior styling'],
-        },
+        { name: 'Basic House Warming', items: ['Main door floral arch', 'Mango leaf torans', 'Basic puja room decor'] },
+        { name: 'Standard House Warming', items: ['All Basic features', 'Staircase flower rangoli', 'Living room drapes', 'Balcony decoration'] },
+        { name: 'Premium House Warming', items: ['All Standard features', 'Full exterior floral highlights', 'Exotic flowers setup', 'Complete interior styling'] },
       ],
-      gallery: ['/house1.jpeg', '/house2.jpeg', '/house3.jpeg', '/house4.jpeg', '/house5.jpeg', '/house6.jpeg', '/house7.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house4.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house6.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house7.jpeg'
+      ],
     },
-    
 
-    // 7️⃣ Engagement
+    // Engagement
     {
       id: 'engagement',
       title: 'Engagement Stage',
@@ -225,26 +216,24 @@ export default function Services() {
       color: 'from-indigo-600 to-purple-600',
       lightColor: 'from-indigo-50 to-purple-50',
       description: 'Beautiful setups for a perfect engagement',
-      image: '/en4.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en4.jpeg',
       highlights: ['Stage Décor', 'Ring Ceremony', 'Floral Backdrops', 'Photography'],
       packages: [
-        {
-          name: 'Basic Engagement',
-          items: ['Stage backdrop', 'Sofa seating', 'Flower decoration'],
-        },
-        {
-          name: 'Standard Engagement',
-          items: ['All Basic features', 'Theme-based décor', 'Lighting setup', 'Entrance décor'],
-        },
-        {
-          name: 'Premium Engagement',
-          items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'],
-        },
+        { name: 'Basic Engagement', items: ['Stage backdrop', 'Sofa seating', 'Flower decoration'] },
+        { name: 'Standard Engagement', items: ['All Basic features', 'Theme-based décor', 'Lighting setup', 'Entrance décor'] },
+        { name: 'Premium Engagement', items: ['All Standard features', 'Luxury floral stage', 'Custom props', 'Photo booth', 'Event management'] },
       ],
-      gallery: ['en1.jpeg','en2.jpeg','en3.jpeg','eng5.jpeg','/eng2.jpeg', '/eng3.jpeg'],
+      gallery: [
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en1.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/en3.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng5.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpeg',
+        'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng3.jpeg'
+      ],
     },
 
-    // 8️⃣ Chapra
+    // Chapra
     {
       id: 'chapra',
       title: 'Chapra Decoration',
@@ -252,26 +241,17 @@ export default function Services() {
       color: 'from-green-600 to-emerald-600',
       lightColor: 'from-green-50 to-emerald-50',
       description: 'Traditional chapra setups with a modern touch',
-      image: '/chapra1.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/chapra1.jpeg',
       highlights: ['Traditional Style', 'Floral Drapes', 'Seating', 'Lighting'],
       packages: [
-        {
-          name: 'Basic Chapra',
-          items: ['Chapra structure', 'Cloth draping', 'Basic lighting'],
-        },
-        {
-          name: 'Standard Chapra',
-          items: ['All Basic features', 'Flower decoration', 'Carpet flooring', 'Seating arrangement'],
-        },
-        {
-          name: 'Premium Chapra',
-          items: ['All Standard features', 'Designer drapes', 'Hanging décor', 'Full event coordination'],
-        },
+        { name: 'Basic Chapra', items: ['Chapra structure', 'Cloth draping', 'Basic lighting'] },
+        { name: 'Standard Chapra', items: ['All Basic features', 'Flower decoration', 'Carpet flooring', 'Seating arrangement'] },
+        { name: 'Premium Chapra', items: ['All Standard features', 'Designer drapes', 'Hanging décor', 'Full event coordination'] },
       ],
-      gallery: ['/chapra1.jpeg'],
+      gallery: ['https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/chapra1.jpeg'],
     },
 
-    // 9️⃣ Rentals
+    // Rentals
     {
       id: 'rentals',
       title: 'Rentals',
@@ -279,25 +259,16 @@ export default function Services() {
       color: 'from-gray-600 to-slate-500',
       lightColor: 'from-gray-50 to-slate-50',
       description: 'Event rentals including props and decor items',
-      image: '/rent1.jpeg',
+      image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/rent1.jpeg',
       highlights: ['Decor Props', 'Seating', 'Lighting Equipment', 'Backdrops'],
       packages: [
-        {
-          name: 'Basic Rentals',
-          items: ['Chairs & Tables', 'Basic props', 'Standard lighting'],
-        },
-        {
-          name: 'Standard Rentals',
-          items: ['Premium seating', 'Themed props', 'Sound equipment', 'Decorative lighting'],
-        },
-        {
-          name: 'Premium Packages',
-          items: ['Complete stage structures', 'Luxury furniture', 'Special effects equipment', 'LED screens'],
-        },
+        { name: 'Basic Rentals', items: ['Chairs & Tables', 'Basic props', 'Standard lighting'] },
+        { name: 'Standard Rentals', items: ['Premium seating', 'Themed props', 'Sound equipment', 'Decorative lighting'] },
+        { name: 'Premium Packages', items: ['Complete stage structures', 'Luxury furniture', 'Special effects equipment', 'LED screens'] },
       ],
-      gallery: ['/rent1.jpeg'],
+      gallery: ['https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/rent1.jpeg'],
     },
-  ]
+  ];
 
   const selectedServiceData = services.find(s => s.id === selectedService);
 
