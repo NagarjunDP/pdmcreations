@@ -58,7 +58,7 @@ const services = [
     title: 'Halfsaree',
     icon: 'Ribbon',
     description: 'Traditional half saree ceremony decorations with premium floral styling.',
-    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half2.jpeg',
+    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half2.jpg',
   },
   {
     id: 'babyshower',
@@ -79,21 +79,21 @@ const services = [
     title: 'Haldi',
     icon: 'Sparkles',
     description: 'Traditional Haldi decorations with vibrant yellow floral themes.',
-    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal5.jpeg',
+    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal5.jpg',
   },
   {
     id: 'housewarming',
     title: 'House Warming',
     icon: 'Home',
     description: 'Stylish house warming decorations to celebrate your new beginning.',
-    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house2.jpeg',
+    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house2.jpg',
   },
   {
     id: 'engagement',
     title: 'Engagement',
     icon: 'Sparkles',
     description: 'Premium engagement stage decorations with elegant lighting.',
-    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpeg',
+    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpg',
   },
   {
     id: 'chapra',
@@ -107,7 +107,7 @@ const services = [
     title: 'Rentals',
     icon: 'Tent',
     description: 'Complete event rental solutions including stages, props, seating and decor.',
-    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal6.jpeg',
+    image: 'https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal6.jpg',
   }
 ];
 
@@ -146,7 +146,7 @@ const SERVICES = [
   },
   {
     icon: Ribbon,
-    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half2.jpeg",
+    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/half2.jpg",
     title: "Halfsaree",
     subtitle: "Traditional half saree ceremony decorations with premium floral styling.",
     highlights: ["Traditional Themes", "Stage Decoration", "Fresh Flowers", "Lighting"],
@@ -170,7 +170,7 @@ const SERVICES = [
   },
   {
     icon: Music,
-    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal5.jpeg",
+    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal5.jpg",
     title: "Haldi",
     subtitle: "Traditional Haldi decorations with vibrant floral yellow themes.",
     highlights: ["Haldi Stage", "Fresh Flowers", "Traditional Decor", "Wedding Setup"],
@@ -178,7 +178,7 @@ const SERVICES = [
   },
   {
     icon: HomeIcon,
-    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house2.jpeg",
+    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/house2.jpg",
     title: "House Warming",
     subtitle: "Elegant house warming decorations to celebrate your new beginning.",
     highlights: ["Entrance Decor", "Puja Setup", "Flower Decoration", "Welcome Arch"],
@@ -186,7 +186,7 @@ const SERVICES = [
   },
   {
     icon: Sparkles,
-    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpeg",
+    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/eng2.jpg",
     title: "Engagement",
     subtitle: "Premium engagement stage decorations with elegant lighting and floral themes.",
     highlights: ["Stage Decoration", "Lighting", "Floral Setup", "Theme Decor"],
@@ -202,7 +202,7 @@ const SERVICES = [
   },
   {
     icon: Star,
-    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal6.jpeg",
+    img: "https://cdn.jsdelivr.net/gh/NagarjunDP/pdmcreations@main/client/public/hal6.jpg",
     title: "Rentals",
     subtitle: "Premium event rental solutions for every celebration.",
     highlights: ["Decor Props", "Backdrops", "Lighting", "Seating & Accessories"],
@@ -548,20 +548,20 @@ function Hero() {
 
   // 🌟 Premium Image Collection: Chosen for high clarity and visual impact
   const backgroundImages = [
-    "/name5.jpeg",
-    "/hal1.jpeg",
+    "/name5.jpg",
+    "/hal1.jpg",
     "/bg1.JPG",
     "/bg2.HEIC",
     "/bg3.HEIC",
-    "/name9.jpeg",
-    "/half11.jpeg",
-    "/half7.jpeg",
-    "/baby3.jpeg",
-    "/baby9.jpeg",
-    "/plate7.jpeg",
-    "/hal5.jpeg",
-    "/house1.jpeg",
-    "/eng5.jpeg",
+    "/name9.jpg",
+    "/half11.jpg",
+    "/half7.jpg",
+    "/baby3.jpg",
+    "/baby9.jpg",
+    "/plate7.jpg",
+    "/hal5.jpg",
+    "/house1.jpg",
+    "/eng5.jpg",
   ];
 
   const [currentImage, setCurrentImage] = useState(0);
@@ -729,7 +729,7 @@ function Hero() {
           {/* CENTRAL LOGO (NO BORDER, NO CONTAINER) */}
           <div className="relative w-full h-full z-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
             <img
-              src="/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.png"
+              src="/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.jpg"
               alt="PDM Logo"
               className="w-[75%] h-[75%] object-contain filter drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] z-20"
             />
