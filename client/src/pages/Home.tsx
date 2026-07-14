@@ -37,79 +37,150 @@ interface Service {
   highlights: string[];
   rating: number;
 }
-
 const services = [
   {
-    id: 'wedding',
-    title: 'Wedding',
-    icon: 'Sparkles',
-    description: 'Beautiful decor for your Wedding stage',
-    image: '/en1.jpeg',
+    id: "wedding",
+    title: "Wedding",
+    icon: "Sparkles",
+    description: "Luxury wedding stage decorations with elegant floral themes.",
+    image: "/en2.jpeg",
   },
   {
-    id: 'naming',
-    title: 'Naming Ceremony',
-    icon: 'Baby',
-    description: 'Celebrate new beginnings with elegance',
-    image: '/nc1.jpeg',
+    id: "naming",
+    title: "Naming Ceremony",
+    icon: "Baby",
+    description: "Beautiful naming ceremony decorations for your little one's special day.",
+    image: "/nc2.jpeg",
   },
   {
-    id: 'halfsaree',
-    title: 'Halfsaree',
-    icon: 'Ribbon',
-    description: 'Traditional decor for halfsaree functions',
-    image: '/half1.jpeg',
+    id: "halfsaree",
+    title: "Halfsaree",
+    icon: "Ribbon",
+    description: "Traditional half saree ceremony decorations with premium floral styling.",
+    image: "/half2.jpeg",
   },
   {
-    id: 'babyshower',
-    title: 'Baby Shower',
-    icon: 'Baby',
-    description: 'Beautiful decor for welcoming your little one',
-    image: '/baby9.jpeg',
+    id: "babyshower",
+    title: "Baby Shower",
+    icon: "Baby",
+    description: "Elegant baby shower decorations with customized themes.",
+    image: "/baby10.jpg",
   },
   {
-    id: 'platedecoration',
-    title: 'Plate Decoration',
-    icon: 'Sparkles',
-    description: 'Creative plate decor for special ceremonies',
-    image: '/baby6.jpeg',
+    id: "platedecoration",
+    title: "Plate Decoration",
+    icon: "Sparkles",
+    description: "Creative and premium plate decorations for all traditional functions.",
+    image: "/baby8.jpg",
   },
   {
-    id: 'haldi',
-    title: 'Haldi',
-    icon: 'Sparkles',
-    description: 'Vibrant yellow themes for haldi occasions',
-    image: '/hal1.jpeg',
+    id: "haldi",
+    title: "Haldi",
+    icon: "Sparkles",
+    description: "Traditional Haldi decorations with vibrant yellow floral themes.",
+    image: "/hal5.jpeg",
   },
   {
-    id: 'housewarming',
-    title: 'House Warming',
-    icon: 'Home',
-    description: 'Elegant setups for your new home',
-    image: '/house1.jpeg',
+    id: "housewarming",
+    title: "House Warming",
+    icon: "Home",
+    description: "Stylish house warming decorations to celebrate your new beginning.",
+    image: "/house2.jpeg",
   },
   {
-    id: 'engagement',
-    title: 'Engagement',
-    icon: 'Sparkles',
-    description: 'Beautiful decor for your engagement stage',
-    image: '/eng1.jpeg',
+    id: "engagement",
+    title: "Engagement",
+    icon: "Sparkles",
+    description: "Premium engagement stage decorations with elegant lighting.",
+    image: "/eng2.jpeg",
   },
   {
-    id: 'chapra',
-    title: 'Chapra',
-    icon: 'Tent',
-    description: 'Traditional chapra setup with fresh flowers',
-    image: '/chapra1.jpeg',
+    id: "chapra",
+    title: "Chapra",
+    icon: "Tent",
+    description: "Traditional Chapra decorations with fresh flowers and premium setup.",
+    image: "/chapra1.jpg",
   },
   {
-    id: 'rentals',
-    title: 'Rentals',
-    icon: 'Tent',
-    description: 'Event rentals including props and decor items',
-    image: '/hal6.jpeg',
-  }
+    id: "rentals",
+    title: "Rentals",
+    icon: "Tent",
+    description: "Complete event rental solutions including stages, props, seating and decor.",
+    image: "/hal6.jpeg",
+  },
 ];
+// const services = [
+//   {
+//     id: 'wedding',
+//     title: 'Wedding',
+//     icon: 'Sparkles',
+//     description: 'Beautiful decor for your Wedding stage',
+//     image: '/en1.jpeg',
+//   },
+//   {
+//     id: 'naming',
+//     title: 'Naming Ceremony',
+//     icon: 'Baby',
+//     description: 'Celebrate new beginnings with elegance',
+//     image: '/nc1.jpeg',
+//   },
+//   {
+//     id: 'halfsaree',
+//     title: 'Halfsaree',
+//     icon: 'Ribbon',
+//     description: 'Traditional decor for halfsaree functions',
+//     image: '/half1.jpeg',
+//   },
+//   {
+//     id: 'babyshower',
+//     title: 'Baby Shower',
+//     icon: 'Baby',
+//     description: 'Beautiful decor for welcoming your little one',
+//     image: '/baby9.jpeg',
+//   },
+//   {
+//     id: 'platedecoration',
+//     title: 'Plate Decoration',
+//     icon: 'Sparkles',
+//     description: 'Creative plate decor for special ceremonies',
+//     image: '/baby6.jpeg',
+//   },
+//   {
+//     id: 'haldi',
+//     title: 'Haldi',
+//     icon: 'Sparkles',
+//     description: 'Vibrant yellow themes for haldi occasions',
+//     image: '/hal1.jpeg',
+//   },
+//   {
+//     id: 'housewarming',
+//     title: 'House Warming',
+//     icon: 'Home',
+//     description: 'Elegant setups for your new home',
+//     image: '/house1.jpeg',
+//   },
+//   {
+//     id: 'engagement',
+//     title: 'Engagement',
+//     icon: 'Sparkles',
+//     description: 'Beautiful decor for your engagement stage',
+//     image: '/eng1.jpeg',
+//   },
+//   {
+//     id: 'chapra',
+//     title: 'Chapra',
+//     icon: 'Tent',
+//     description: 'Traditional chapra setup with fresh flowers',
+//     image: '/chapra1.jpeg',
+//   },
+//   {
+//     id: 'rentals',
+//     title: 'Rentals',
+//     icon: 'Tent',
+//     description: 'Event rentals including props and decor items',
+//     image: '/hal6.jpeg',
+//   }
+// ];
 
 
 const iconMap: Record<string, any> = {
@@ -127,89 +198,170 @@ const iconMap: Record<string, any> = {
 const PHONE_NUMBER = '+918884076143';
 const BUSINESS_NAME = "PDM Creations";
 
+// const SERVICES = [
+//   {
+//     icon: Sparkles,
+//     img: "/en1.jpeg",
+//     title: "Wedding",
+//     subtitle: "Floral artistry, Traditional, drapes & themes",
+//     highlights: ["Stage setups", "Mandaps", "Traditional", "Theme decor"],
+//     rating: 5
+//   },
+//   {
+//     icon: Camera,
+//     img: "/nc1.jpeg",
+//     title: "Naming Ceremony",
+//     subtitle: "Birthdays, anniversaries & custom themes",
+//     highlights: ["Kids themes", "Naming Ceremony", "Custom props", "Entertainment"],
+//     rating: 5
+//   },
+//   {
+//     icon: Ribbon,
+//     img: "/half11.jpeg", // Needs appropriate image
+//     title: "Halfsaree",
+//     subtitle: "Traditional decor for halfsaree functions",
+//     highlights: ["Traditional Themes", "Floral Designs", "Stage Decoration", "Lighting"],
+//     rating: 5
+//   },
+//   {
+//     icon: Baby,
+//     img: "/baby9.jpeg", // Needs appropriate image
+//     title: "Baby Shower",
+//     subtitle: "Beautiful decor for welcoming your little one",
+//     highlights: ["Baby Shower Themes", "Floral Arches", "Custom Backdrops", "Photo Booth"],
+//     rating: 5
+//   },
+//   {
+//     icon: Gem,
+//     img: "/pd1.HEIC", // Needs appropriate image
+//     title: "Plate Decoration",
+//     subtitle: "Creative plate decor for special ceremonies",
+//     highlights: ["Engagement Plates", "Aarti Thali", "Bridal Trousseau", "Gift Packing"],
+//     rating: 5
+//   },
+//   {
+//     icon: Music,
+//     img: "/hal1.jpeg",
+//     title: "Haldi",
+//     subtitle: "Vibrant yellow themes for special occasions",
+//     highlights: ["High Quality", "Shastra", "Haldi", "Marriage Decorations"],
+//     rating: 5
+//   },
+//   {
+//     icon: HomeIcon,
+//     img: "/house1.jpeg",
+//     title: "House Warming",
+//     subtitle: "Elegant transformations for your personal space",
+//     highlights: ["Entrance arches", "Puja room decor", "Wall drapes", "Staircase florals"],
+//     rating: 5
+//   },
+//   {
+//     icon: Sparkles,
+//     img: "/eng5.jpeg",
+//     title: "Engagement",
+//     subtitle: "Floral artistry, lighting, drapes & themes",
+//     highlights: ["Stage setups", "Mandaps", "Lighting design", "Theme decor"],
+//     rating: 5
+//   },
+//   {
+//     icon: Flower2,
+//     img: "/chapra1.jpeg", // Needs appropriate image
+//     title: "Chapra",
+//     subtitle: "Beautiful chapra decoration for traditional events",
+//     highlights: ["Chapra Setup", "Fresh Flowers", "Greenery", "Traditional Touch"],
+//     rating: 5
+//   },
+//   {
+//     icon: Star,
+//     img: "/rent1.jpeg", // Needs appropriate image
+//     title: "Rentals",
+//     subtitle: "Event rentals including props and decor items",
+//     highlights: ["Decor Props", "Seating", "Lighting Equipment", "Backdrops"],
+//     rating: 5
+//   }
+// ];
 const SERVICES = [
   {
     icon: Sparkles,
-    img: "/en1.jpeg",
+    img: "/en2.jpeg",
     title: "Wedding",
-    subtitle: "Floral artistry, Traditional, drapes & themes",
-    highlights: ["Stage setups", "Mandaps", "Traditional", "Theme decor"],
-    rating: 5
+    subtitle: "Luxury wedding décor with elegant floral themes and premium stage setups.",
+    highlights: ["Stage Setups", "Mandaps", "Traditional Decor", "Theme Designs"],
+    rating: 5,
   },
   {
     icon: Camera,
-    img: "/nc1.jpeg",
+    img: "/nc2.jpeg",
     title: "Naming Ceremony",
-    subtitle: "Birthdays, anniversaries & custom themes",
-    highlights: ["Kids themes", "Naming Ceremony", "Custom props", "Entertainment"],
-    rating: 5
+    subtitle: "Elegant naming ceremony decorations for your baby's special celebration.",
+    highlights: ["Naming Ceremony", "Kids Themes", "Custom Props", "Photo Booth"],
+    rating: 5,
   },
   {
     icon: Ribbon,
-    img: "/half11.jpeg", // Needs appropriate image
+    img: "/half2.jpeg",
     title: "Halfsaree",
-    subtitle: "Traditional decor for halfsaree functions",
-    highlights: ["Traditional Themes", "Floral Designs", "Stage Decoration", "Lighting"],
-    rating: 5
+    subtitle: "Traditional half saree ceremony decorations with premium floral styling.",
+    highlights: ["Traditional Themes", "Stage Decoration", "Fresh Flowers", "Lighting"],
+    rating: 5,
   },
   {
     icon: Baby,
-    img: "/baby9.jpeg", // Needs appropriate image
+    img: "/baby10.jpg",
     title: "Baby Shower",
-    subtitle: "Beautiful decor for welcoming your little one",
-    highlights: ["Baby Shower Themes", "Floral Arches", "Custom Backdrops", "Photo Booth"],
-    rating: 5
+    subtitle: "Beautiful baby shower decorations with customized premium themes.",
+    highlights: ["Baby Shower", "Floral Arches", "Custom Backdrops", "Photo Booth"],
+    rating: 5,
   },
   {
     icon: Gem,
-    img: "/pd1.HEIC", // Needs appropriate image
+    img: "/baby8.jpg",
     title: "Plate Decoration",
-    subtitle: "Creative plate decor for special ceremonies",
+    subtitle: "Creative and elegant plate decorations for all traditional ceremonies.",
     highlights: ["Engagement Plates", "Aarti Thali", "Bridal Trousseau", "Gift Packing"],
-    rating: 5
+    rating: 5,
   },
   {
     icon: Music,
-    img: "/hal1.jpeg",
+    img: "/hal5.jpeg",
     title: "Haldi",
-    subtitle: "Vibrant yellow themes for special occasions",
-    highlights: ["High Quality", "Shastra", "Haldi", "Marriage Decorations"],
-    rating: 5
+    subtitle: "Traditional Haldi decorations with vibrant floral yellow themes.",
+    highlights: ["Haldi Stage", "Fresh Flowers", "Traditional Decor", "Wedding Setup"],
+    rating: 5,
   },
   {
     icon: HomeIcon,
-    img: "/house1.jpeg",
+    img: "/house2.jpeg",
     title: "House Warming",
-    subtitle: "Elegant transformations for your personal space",
-    highlights: ["Entrance arches", "Puja room decor", "Wall drapes", "Staircase florals"],
-    rating: 5
+    subtitle: "Elegant house warming decorations to celebrate your new beginning.",
+    highlights: ["Entrance Decor", "Puja Setup", "Flower Decoration", "Welcome Arch"],
+    rating: 5,
   },
   {
     icon: Sparkles,
-    img: "/eng5.jpeg",
+    img: "/eng2.jpeg",
     title: "Engagement",
-    subtitle: "Floral artistry, lighting, drapes & themes",
-    highlights: ["Stage setups", "Mandaps", "Lighting design", "Theme decor"],
-    rating: 5
+    subtitle: "Premium engagement stage decorations with elegant lighting and floral themes.",
+    highlights: ["Stage Decoration", "Lighting", "Floral Setup", "Theme Decor"],
+    rating: 5,
   },
   {
     icon: Flower2,
-    img: "/chapra1.jpeg", // Needs appropriate image
+    img: "/chapra1.jpg",
     title: "Chapra",
-    subtitle: "Beautiful chapra decoration for traditional events",
-    highlights: ["Chapra Setup", "Fresh Flowers", "Greenery", "Traditional Touch"],
-    rating: 5
+    subtitle: "Traditional chapra decoration with fresh flowers and premium styling.",
+    highlights: ["Chapra Setup", "Fresh Flowers", "Traditional Decor", "Greenery"],
+    rating: 5,
   },
   {
     icon: Star,
-    img: "/rent1.jpeg", // Needs appropriate image
+    img: "/hal6.jpeg",
     title: "Rentals",
-    subtitle: "Event rentals including props and decor items",
-    highlights: ["Decor Props", "Seating", "Lighting Equipment", "Backdrops"],
-    rating: 5
-  }
+    subtitle: "Premium event rental solutions for every celebration.",
+    highlights: ["Decor Props", "Backdrops", "Lighting", "Seating & Accessories"],
+    rating: 5,
+  },
 ];
-
 // Initialize AOS for reveal animations
 if (typeof window !== 'undefined') {
   AOS.init({ duration: 800, once: true });
