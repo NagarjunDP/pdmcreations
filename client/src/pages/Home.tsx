@@ -729,7 +729,7 @@ function Hero() {
           {/* CENTRAL LOGO (NO BORDER, NO CONTAINER) */}
           <div className="relative w-full h-full z-10 flex items-center justify-center group-hover:scale-110 transition-transform duration-700">
             <img
-              src="/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.jpg"
+              src="/logobg.png"
               alt="PDM Logo"
               className="w-[75%] h-[75%] object-contain filter drop-shadow-[0_0_20px_rgba(251,191,36,0.6)] z-20"
             />

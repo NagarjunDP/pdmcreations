@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 
-const LOGO_SRC = "/WhatsApp_Image_2026-03-08_at_10.45.49_AM-removebg-preview.png";
+const LOGO_SRC = "/logobg.png";
 
 const navItems = [
   { label: 'Home', href: '/' },
